@@ -4836,9 +4836,9 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\AI_Agent_WebApp.Web.csproj",
-      "projectName": "AI_Agent_WebApp.Web",
-      "projectPath": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\AI_Agent_WebApp.Web.csproj",
+      "projectUniqueName": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj",
+      "projectName": "AI_Agent_WebApp",
+      "projectPath": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj",
       "packagesPath": "C:\\Users\\DELL\\.nuget\\packages\\",
       "outputPath": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\",
       "projectStyle": "PackageReference",

@@ -1,8 +1,8 @@
 {
   "Files": [
     {
-      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AI_Agent_WebApp.Web.bundle.scp.css",
-      "PackagePath": "staticwebassets\\AI_Agent_WebApp.Web.yly56noc6n.bundle.scp.css"
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AI_Agent_WebApp.bundle.scp.css",
+      "PackagePath": "staticwebassets\\AI_Agent_WebApp.gxteyfa2e2.bundle.scp.css"
     },
     {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\.gitkeep",
@@ -13,10 +13,6 @@
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
-      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\default-agent.png",
-      "PackagePath": "staticwebassets\\default-agent.png"
-    },
-    {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
     },
@@ -25,8 +21,68 @@
       "PackagePath": "staticwebassets\\images\\.gitkeep"
     },
     {
-      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\.gitkeep",
-      "PackagePath": "staticwebassets\\images\\agents\\.gitkeep"
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\AstroSage.png",
+      "PackagePath": "staticwebassets\\images\\agents\\AstroSage.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\ByteWarden.png",
+      "PackagePath": "staticwebassets\\images\\agents\\ByteWarden.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\ChronaEdge.png",
+      "PackagePath": "staticwebassets\\images\\agents\\ChronaEdge.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\EchoPulse.png",
+      "PackagePath": "staticwebassets\\images\\agents\\EchoPulse.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\GlimmerAI.png",
+      "PackagePath": "staticwebassets\\images\\agents\\GlimmerAI.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\HexaTune.png",
+      "PackagePath": "staticwebassets\\images\\agents\\HexaTune.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\LucidForge.png",
+      "PackagePath": "staticwebassets\\images\\agents\\LucidForge.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\NeuraWhirl.png",
+      "PackagePath": "staticwebassets\\images\\agents\\NeuraWhirl.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\NovaFlux.png",
+      "PackagePath": "staticwebassets\\images\\agents\\NovaFlux.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\OrbitalNest.png",
+      "PackagePath": "staticwebassets\\images\\agents\\OrbitalNest.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\PrismShift.png",
+      "PackagePath": "staticwebassets\\images\\agents\\PrismShift.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\QuantaNova.png",
+      "PackagePath": "staticwebassets\\images\\agents\\QuantaNova.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\Synthara.png",
+      "PackagePath": "staticwebassets\\images\\agents\\Synthara.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\VantaSpark.png",
+      "PackagePath": "staticwebassets\\images\\agents\\VantaSpark.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\ZenithBot.png",
+      "PackagePath": "staticwebassets\\images\\agents\\ZenithBot.png"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\default-agent.png",
+      "PackagePath": "staticwebassets\\images\\agents\\default-agent.png"
     },
     {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\js\\.gitkeep",
@@ -277,24 +333,24 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AI_Agent_WebApp.Web.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AI_Agent_WebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AI_Agent_WebApp.Web.Microsoft.AspNetCore.StaticWebAssets.props",
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AI_Agent_WebApp.Microsoft.AspNetCore.StaticWebAssets.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssets.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.AI_Agent_WebApp.Web.props",
-      "PackagePath": "build\\AI_Agent_WebApp.Web.props"
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.build.AI_Agent_WebApp.props",
+      "PackagePath": "build\\AI_Agent_WebApp.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.AI_Agent_WebApp.Web.props",
-      "PackagePath": "buildMultiTargeting\\AI_Agent_WebApp.Web.props"
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildMultiTargeting.AI_Agent_WebApp.props",
+      "PackagePath": "buildMultiTargeting\\AI_Agent_WebApp.props"
     },
     {
-      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.AI_Agent_WebApp.Web.props",
-      "PackagePath": "buildTransitive\\AI_Agent_WebApp.Web.props"
+      "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.buildTransitive.AI_Agent_WebApp.props",
+      "PackagePath": "buildTransitive\\AI_Agent_WebApp.props"
     }
   ],
   "ElementsToRemove": []

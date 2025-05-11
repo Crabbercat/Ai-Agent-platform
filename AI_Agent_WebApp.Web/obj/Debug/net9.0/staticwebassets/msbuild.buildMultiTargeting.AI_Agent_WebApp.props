@@ -1,0 +1,3 @@
+﻿<Project>
+  <Import Project="..\build\AI_Agent_WebApp.props" />
+</Project>

@@ -43,18 +43,25 @@ AI_Agent_WebApp/
 │   │   └── ...
 │   │
 │   └── DbContext.cs           # Cấu hình EF Core DbContext
-│
-├── Repositories/              # Lớp truy cập dữ liệu (Data Access)
-│   ├── Interfaces/            # Interface cho các repository
-│   │   ├── IAgentRepository.cs
-│   │   ├── IUserRepository.cs
+├── Data/
+│   ├── Entities/             → Các entity model tương ứng bảng DB
+│   │   ├── Agent.cs
+│   │   ├── Article.cs
+│   │   ├── User.cs
 │   │   └── ...
 │   │
-│   ├── Implementations/       # Các class triển khai interface
-│   │   ├── AgentRepository.cs
-│   │   ├── UserRepository.cs
-│   │   └── ...
-│
+|   ├── Repositories/              # Lớp truy cập dữ liệu (Data Access)
+│   │   ├── Interfaces/            # Interface cho các repository
+│   │   │   ├── IAgentRepository.cs
+│   │   │   ├── IUserRepository.cs
+│   │   │   └──  ...
+│   │   │
+│   │   └── Implementations/       # Các class triển khai interface
+│   │       ├── AgentRepository.cs
+│   │       ├── UserRepository.cs
+│   │       └── ...
+│   ├── ApplicationDbContext.cs
+│   └── Migrations/           → Thư mục chứa EF migrations
 ├── Services/                  # Lớp xử lý nghiệp vụ (Business Layer)
 │   ├── Interfaces/
 │   │   ├── IAgentService.cs
@@ -79,7 +86,8 @@ AI_Agent_WebApp/
 ├── wwwroot/                   # Tài nguyên tĩnh (JS, CSS, ảnh...)
 │   ├── css/
 │   ├── js/
-│   └── images/
+│   ├── images/agents/      → Ảnh của các agent (dùng ImagePath)
+│   └── default-agent.png
 │
 ├── appsettings.json           # File cấu hình (connection string, logging...)
 ├── Program.cs                 # Điểm khởi chạy ứng dụng

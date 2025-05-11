@@ -6,5 +6,6 @@ namespace AI_Agent_WebApp.Repositories.Interfaces
         IEnumerable<Models.Entities.Supplier> GetAll();
         void UpdateProfile(Models.Entities.Supplier supplier);
         void UpdatePassword(int id, string newPasswordHash);
+        Models.Entities.Supplier GetById(int id);
     }
 }

@@ -12,7 +12,11 @@ namespace AI_Agent_WebApp.Repositories.Implementations
         {
             _context = context;
         }
-        public Supplier? GetById(int id) => _context.Users.OfType<Supplier>().FirstOrDefault(s => s.Id == id);
+        public Supplier GetById(int id)
+        {
+            var supplier = _context.Users.OfType<Supplier>().FirstOrDefault(s => s.Id == id) ?? throw new KeyNotFoundException($"Supplier with ID {id} was not found.");
+            return supplier;
+        }
         public IEnumerable<Supplier> GetAll() => _context.Users.OfType<Supplier>().ToList();
         public void UpdateProfile(Supplier supplier)
         {

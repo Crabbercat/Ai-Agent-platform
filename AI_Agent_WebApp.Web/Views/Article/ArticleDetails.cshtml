@@ -1,0 +1,8 @@
+@model AI_Agent_WebApp.Models.Entities.Article
+@{
+    ViewData["Title"] = "Chi tiết bài viết";
+}
+<h2>@Model.Title</h2>
+<p>@Model.Content</p>
+<p><strong>Tác giả:</strong> @Model.User?.FullName</p>
+<p><strong>Ngày tạo:</strong> @Model.CreatedAt.ToShortDateString()</p>

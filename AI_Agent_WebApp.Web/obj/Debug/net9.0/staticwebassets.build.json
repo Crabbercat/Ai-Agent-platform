@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "iVg8GjNe6g2VSuWy4vtrA7UNplegK/CmxemRoFoedy4=",
+  "Hash": "+W06W2OggmwilNazh1LZlzeeOaFRPzFAHVVcuZLKyfM=",
   "Source": "AI_Agent_WebApp",
   "BasePath": "_content/AI_Agent_WebApp",
   "Mode": "Default",
@@ -1403,27 +1403,6 @@
       "OriginalItemSpec": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AI_Agent_WebApp.bundle.scp.css"
     },
     {
-      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\.gitkeep",
-      "SourceId": "AI_Agent_WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
-      "BasePath": "_content/AI_Agent_WebApp",
-      "RelativePath": "css/#[.{fingerprint}]?.gitkeep",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "jb5qkhz4qe",
-      "Integrity": "b0UyDvWI30ltEOICLrue2RyhwOGX1KQCgTkdFKTB8EI=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\css\\.gitkeep"
-    },
-    {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site.css",
       "SourceId": "AI_Agent_WebApp",
       "SourceType": "Discovered",
@@ -1464,27 +1443,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
-    },
-    {
-      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\.gitkeep",
-      "SourceId": "AI_Agent_WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
-      "BasePath": "_content/AI_Agent_WebApp",
-      "RelativePath": "images/#[.{fingerprint}]?.gitkeep",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\images\\.gitkeep"
     },
     {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\AstroSage.png",
@@ -1821,27 +1779,6 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\agents\\ZenithBot.png"
-    },
-    {
-      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\js\\.gitkeep",
-      "SourceId": "AI_Agent_WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
-      "BasePath": "_content/AI_Agent_WebApp",
-      "RelativePath": "js/#[.{fingerprint}]?.gitkeep",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "ia0cj7d6io",
-      "Integrity": "ekvVjcZOUch9oKjgqC/CBKBzVOWE3k0xnTRdNCkiZew=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\js\\.gitkeep"
     },
     {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\js\\site.js",
@@ -3723,88 +3660,6 @@
       ]
     },
     {
-      "Route": "css/.gitkeep",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\.gitkeep",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b0UyDvWI30ltEOICLrue2RyhwOGX1KQCgTkdFKTB8EI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-b0UyDvWI30ltEOICLrue2RyhwOGX1KQCgTkdFKTB8EI="
-        }
-      ]
-    },
-    {
-      "Route": "css/.jb5qkhz4qe.gitkeep",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\.gitkeep",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "41"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"b0UyDvWI30ltEOICLrue2RyhwOGX1KQCgTkdFKTB8EI=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "jb5qkhz4qe"
-        },
-        {
-          "Name": "label",
-          "Value": "css/.gitkeep"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-b0UyDvWI30ltEOICLrue2RyhwOGX1KQCgTkdFKTB8EI="
-        }
-      ]
-    },
-    {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\b6zsnntick-b9sayid5wm.gz",
       "Selectors": [
@@ -4397,88 +4252,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
-        }
-      ]
-    },
-    {
-      "Route": "images/.5ipweew5fc.gitkeep",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\.gitkeep",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ipweew5fc"
-        },
-        {
-          "Name": "label",
-          "Value": "images/.gitkeep"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": "images/.gitkeep",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\.gitkeep",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
         }
       ]
     },
@@ -5791,88 +5564,6 @@
         {
           "Name": "integrity",
           "Value": "sha256-+ncZimfxfiTpVzv5zFcMMPuT2rxCRhGJXuZjyliCPiw="
-        }
-      ]
-    },
-    {
-      "Route": "js/.gitkeep",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\js\\.gitkeep",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ekvVjcZOUch9oKjgqC/CBKBzVOWE3k0xnTRdNCkiZew=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-ekvVjcZOUch9oKjgqC/CBKBzVOWE3k0xnTRdNCkiZew="
-        }
-      ]
-    },
-    {
-      "Route": "js/.ia0cj7d6io.gitkeep",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\js\\.gitkeep",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "47"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"ekvVjcZOUch9oKjgqC/CBKBzVOWE3k0xnTRdNCkiZew=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "ia0cj7d6io"
-        },
-        {
-          "Name": "label",
-          "Value": "js/.gitkeep"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-ekvVjcZOUch9oKjgqC/CBKBzVOWE3k0xnTRdNCkiZew="
         }
       ]
     },

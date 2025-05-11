@@ -1,0 +1,16 @@
+@model AI_Agent_WebApp.Models.Entities.Agent
+@{
+    ViewData["Title"] = "Tạo mới AI-Agent";
+}
+<h2>Tạo mới AI-Agent</h2>
+<form asp-action="Create">
+    <div class="form-group">
+        <label asp-for="Name"></label>
+        <input asp-for="Name" class="form-control" />
+    </div>
+    <div class="form-group">
+        <label asp-for="Description"></label>
+        <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    <button type="submit" class="btn btn-primary">Tạo mới</button>
+</form>

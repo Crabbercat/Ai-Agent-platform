@@ -1,0 +1,12 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Review>
+<ul class="list-group">
+@foreach (var review in Model)
+{
+    <li class="list-group-item">
+        <strong>@review.User?.FullName</strong>:
+        <span>@review.Content</span>
+        <span class="text-warning">@review.Rating ★</span>
+        <span class="text-muted">(@review.CreatedAt.ToShortDateString())</span>
+    </li>
+}
+</ul>

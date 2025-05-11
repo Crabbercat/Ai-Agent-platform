@@ -1,0 +1,11 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Article>
+@{
+    ViewData["Title"] = "Bài viết về Agent";
+}
+<h2>Bài viết liên quan đến Agent</h2>
+<ul>
+@foreach (var article in Model)
+{
+    <li><a asp-action="Details" asp-route-id="@article.Id">@article.Title</a></li>
+}
+</ul>

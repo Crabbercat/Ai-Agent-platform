@@ -5,20 +5,12 @@
       "PackagePath": "staticwebassets\\AI_Agent_WebApp.gxteyfa2e2.bundle.scp.css"
     },
     {
-      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\.gitkeep",
-      "PackagePath": "staticwebassets\\css\\.gitkeep"
-    },
-    {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site.css",
       "PackagePath": "staticwebassets\\css\\site.css"
     },
     {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
       "PackagePath": "staticwebassets\\favicon.ico"
-    },
-    {
-      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\.gitkeep",
-      "PackagePath": "staticwebassets\\images\\.gitkeep"
     },
     {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\AstroSage.png",
@@ -83,10 +75,6 @@
     {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\default-agent.png",
       "PackagePath": "staticwebassets\\images\\agents\\default-agent.png"
-    },
-    {
-      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\js\\.gitkeep",
-      "PackagePath": "staticwebassets\\js\\.gitkeep"
     },
     {
       "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\js\\site.js",

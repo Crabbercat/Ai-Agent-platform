@@ -1,0 +1,11 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Agent>
+@{
+    ViewData["Title"] = "Các Agent đã theo dõi";
+}
+<h2>Agent bạn đang theo dõi</h2>
+<ul>
+@foreach (var agent in Model)
+{
+    <li>@agent.Name</li>
+}
+</ul>

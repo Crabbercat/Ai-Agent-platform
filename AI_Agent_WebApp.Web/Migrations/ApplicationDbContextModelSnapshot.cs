@@ -76,7 +76,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "NovaFlux",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -88,7 +88,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "QuantaNova",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -100,7 +100,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "ByteWarden",
                             PaymentTypeId = 3,
-                            SupplierId = 1
+                            SupplierId = 4
                         },
                         new
                         {
@@ -112,7 +112,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "EchoPulse",
                             PaymentTypeId = 4,
-                            SupplierId = 1
+                            SupplierId = 5
                         },
                         new
                         {
@@ -124,7 +124,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "ZenithBot",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -136,7 +136,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "AstroSage",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 3
                         },
                         new
                         {
@@ -148,7 +148,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "GlimmerAI",
                             PaymentTypeId = 3,
-                            SupplierId = 1
+                            SupplierId = 4
                         },
                         new
                         {
@@ -160,7 +160,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "OrbitalNest",
                             PaymentTypeId = 4,
-                            SupplierId = 1
+                            SupplierId = 5
                         },
                         new
                         {
@@ -172,7 +172,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "Synthara",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -184,7 +184,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "ChronaEdge",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 3
                         },
                         new
                         {
@@ -196,7 +196,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "VantaSpark",
                             PaymentTypeId = 3,
-                            SupplierId = 1
+                            SupplierId = 4
                         },
                         new
                         {
@@ -208,7 +208,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "LucidForge",
                             PaymentTypeId = 4,
-                            SupplierId = 1
+                            SupplierId = 5
                         },
                         new
                         {
@@ -220,7 +220,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "NeuraWhirl",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -232,7 +232,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "PrismShift",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 3
                         },
                         new
                         {
@@ -244,7 +244,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "HexaTune",
                             PaymentTypeId = 3,
-                            SupplierId = 1
+                            SupplierId = 4
                         },
                         new
                         {
@@ -256,7 +256,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "OmniScribe",
                             PaymentTypeId = 4,
-                            SupplierId = 1
+                            SupplierId = 5
                         },
                         new
                         {
@@ -268,7 +268,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "AeroMind",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -280,7 +280,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "PulseCraft",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 3
                         },
                         new
                         {
@@ -292,7 +292,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "TerraByte",
                             PaymentTypeId = 3,
-                            SupplierId = 1
+                            SupplierId = 4
                         },
                         new
                         {
@@ -304,7 +304,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "NexonNode",
                             PaymentTypeId = 4,
-                            SupplierId = 1
+                            SupplierId = 5
                         },
                         new
                         {
@@ -316,7 +316,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "StellarWeave",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -328,7 +328,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "QuirkBot",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 3
                         },
                         new
                         {
@@ -340,7 +340,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "CodeRipple",
                             PaymentTypeId = 3,
-                            SupplierId = 1
+                            SupplierId = 4
                         },
                         new
                         {
@@ -352,7 +352,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "VoxenCore",
                             PaymentTypeId = 4,
-                            SupplierId = 1
+                            SupplierId = 5
                         },
                         new
                         {
@@ -364,7 +364,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "MindLoom",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -376,7 +376,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "KairoUnit",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 3
                         },
                         new
                         {
@@ -388,7 +388,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "LumenQuest",
                             PaymentTypeId = 3,
-                            SupplierId = 1
+                            SupplierId = 4
                         },
                         new
                         {
@@ -400,7 +400,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "RiftSync",
                             PaymentTypeId = 4,
-                            SupplierId = 1
+                            SupplierId = 5
                         },
                         new
                         {
@@ -412,7 +412,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "CerebraLink",
                             PaymentTypeId = 1,
-                            SupplierId = 1
+                            SupplierId = 2
                         },
                         new
                         {
@@ -424,7 +424,7 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "HaloNest",
                             PaymentTypeId = 2,
-                            SupplierId = 1
+                            SupplierId = 3
                         });
                 });
 
@@ -684,11 +684,71 @@ namespace AI_Agent_WebApp.Migrations
                         {
                             Id = 2,
                             CreatedAt = new DateTime(2024, 1, 2, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "user1@example.com",
-                            FullName = "User One",
-                            PasswordHash = "user1hash",
+                            Email = "supplier1@example.com",
+                            FullName = "Supplier One",
+                            PasswordHash = "supplier1hash",
+                            Role = "Supplier",
+                            Username = "supplier1"
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2024, 1, 3, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "supplier2@example.com",
+                            FullName = "Supplier Two",
+                            PasswordHash = "supplier2hash",
+                            Role = "Supplier",
+                            Username = "supplier2"
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2024, 1, 4, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "supplier3@example.com",
+                            FullName = "Supplier Three",
+                            PasswordHash = "supplier3hash",
+                            Role = "Supplier",
+                            Username = "supplier3"
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 1, 5, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "supplier4@example.com",
+                            FullName = "Supplier Four",
+                            PasswordHash = "supplier4hash",
+                            Role = "Supplier",
+                            Username = "supplier4"
+                        },
+                        new
+                        {
+                            Id = 6,
+                            CreatedAt = new DateTime(2024, 1, 6, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "user2@example.com",
+                            FullName = "User Two",
+                            PasswordHash = "user2hash",
                             Role = "User",
-                            Username = "user1"
+                            Username = "user2"
+                        },
+                        new
+                        {
+                            Id = 7,
+                            CreatedAt = new DateTime(2024, 1, 7, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "user3@example.com",
+                            FullName = "User Three",
+                            PasswordHash = "user3hash",
+                            Role = "User",
+                            Username = "user3"
+                        },
+                        new
+                        {
+                            Id = 8,
+                            CreatedAt = new DateTime(2024, 1, 8, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "user4@example.com",
+                            FullName = "User Four",
+                            PasswordHash = "user4hash",
+                            Role = "User",
+                            Username = "user4"
                         });
                 });
 

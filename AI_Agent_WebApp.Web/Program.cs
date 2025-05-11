@@ -9,6 +9,9 @@ builder.Services.AddControllersWithViews();
 builder.Services.AddDbContext<ApplicationDbContext>(options =>
     options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
+builder.Services.AddScoped<AI_Agent_WebApp.Services.Interfaces.IAgentService, AI_Agent_WebApp.Services.Implementations.AgentService>();
+builder.Services.AddScoped<AI_Agent_WebApp.Repositories.Interfaces.IAgentRepository, AI_Agent_WebApp.Repositories.Implementations.AgentRepository>();
+
 var app = builder.Build();
 
 // Configure the HTTP request pipeline.
@@ -28,7 +31,6 @@ app.MapStaticAssets();
 
 app.MapControllerRoute(
     name: "default",
-    pattern: "{controller=Home}/{action=Index}/{id?}")
-    .WithStaticAssets();
+    pattern: "{controller=Agent}/{action=Details}/{id=1}");
 
 app.Run();

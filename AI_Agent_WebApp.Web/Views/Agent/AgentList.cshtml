@@ -1,0 +1,28 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Agent>
+@{
+    ViewData["Title"] = "Danh sách AI-Agent";
+}
+<h2>Danh sách AI-Agent</h2>
+<table class="table">
+    <thead>
+        <tr>
+            <th>Tên</th>
+            <th>Nhà cung cấp</th>
+            <th>Danh mục</th>
+            <th>Trạng thái</th>
+            <th></th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var agent in Model)
+        {
+            <tr>
+                <td>@agent.Name</td>
+                <td>@agent.Supplier?.FullName</td>
+                <td>@agent.Category?.Name</td>
+                <td>@(agent.IsActive ? "Hoạt động" : "Bị khóa")</td>
+                <td><a asp-action="Details" asp-route-id="@agent.Id">Chi tiết</a></td>
+            </tr>
+        }
+    </tbody>
+</table>

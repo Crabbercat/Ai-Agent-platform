@@ -1,0 +1,11 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Supplier>
+@{
+    ViewData["Title"] = "Quản lý nhà cung cấp";
+}
+<h2>Danh sách nhà cung cấp</h2>
+<ul>
+@foreach (var supplier in Model)
+{
+    <li>@supplier.FullName - @supplier.Email</li>
+}
+</ul>

@@ -4,42 +4,148 @@
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>@ViewData["Title"] - AI_Agent_WebApp.Web</title>
-    <script type="importmap"></script>
     <link rel="stylesheet" href="~/lib/bootstrap/dist/css/bootstrap.min.css" />
     <link rel="stylesheet" href="~/css/site.css" asp-append-version="true" />
     <link rel="stylesheet" href="~/AI_Agent_WebApp.Web.styles.css" asp-append-version="true" />
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;600;700&display=swap" rel="stylesheet">
+    <link rel="icon" type="image/x-icon" href="~/favicon.ico" />
+    @RenderSection("Head", required: false)
 </head>
-<body>
-    <header>
-        <nav class="navbar navbar-expand-sm navbar-toggleable-sm navbar-light bg-white border-bottom box-shadow mb-3">
-            <div class="container-fluid">
-                <a class="navbar-brand" asp-area="" asp-controller="Home" asp-action="Index">AI_Agent_WebApp.Web</a>
-                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target=".navbar-collapse" aria-controls="navbarSupportedContent"
-                        aria-expanded="false" aria-label="Toggle navigation">
-                    <span class="navbar-toggler-icon"></span>
-                </button>
-                <div class="navbar-collapse collapse d-sm-inline-flex justify-content-between">
-                    <ul class="navbar-nav flex-grow-1">
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Index">Home</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link text-dark" asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
-                        </li>
-                    </ul>
-                </div>
+<body style="font-family: 'Inter', sans-serif; background-color: #f7f9fc; margin: 0;">
+    @using Microsoft.AspNetCore.Http
+    @inject IHttpContextAccessor HttpContextAccessor
+    @{
+        var isAuthenticated = HttpContextAccessor.HttpContext?.User?.Identity?.IsAuthenticated ?? false;
+        var userName = isAuthenticated ? HttpContextAccessor.HttpContext?.User?.Identity?.Name ?? "" : null;
+        var userRole = isAuthenticated ? HttpContextAccessor.HttpContext?.User?.FindFirst("role")?.Value ?? "" : null;
+    }
+    <header style="background-color: #1D0C81; color: #fff; padding: 0; border-bottom: 2px solid #e1e1e1;">
+        <div style="max-width: 1200px; margin: 0 auto; display: flex; align-items: center; justify-content: space-between; padding: 0 40px; height: 60px;">
+            <a href="@Url.Action("Index", "Home")">
+                <img src="~/AIDomain.png" alt="AIDomain Logo" style="height: 44px; border-radius: 16px; margin-right: 10px; vertical-align: middle; box-shadow: 0 2px 8px rgba(0,0,0,0.07);" />
+            </a>
+            <nav>
+                <a href="/" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Home</a>
+                <a href="/AgentMaps" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">AI Agent Maps</a>
+                <a href="/Categories" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Categories</a>
+                <a href="/Tags" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Tags</a>
+                <a href="/Blog" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Blog</a>
+                <a href="/Advertise" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Advertise</a>
+                <a href="@Url.Action("Search", "Agent")" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px; font-weight:600;">Search</a>
+            </nav>
+            <div>
+                @if (!isAuthenticated)
+                {
+                    <a href="@Url.Action("Login", "Auth")" style="background: #fff; color: #1D0C81; padding: 6px 18px; border-radius: 6px; text-decoration: none; font-weight: 600; font-size: 15px;">Login</a>
+                }
+                else
+                {
+                    <div class="dropdown" style="display:inline-block;">
+                        <button class="btn btn-light dropdown-toggle" type="button" id="userDropdown" data-bs-toggle="dropdown" aria-expanded="false" style="color: #1D0C81; font-weight: 600; font-size: 15px;">
+                            @userName
+                        </button>
+                        <ul class="dropdown-menu dropdown-menu-end" aria-labelledby="userDropdown">
+                            @if (userRole == "User")
+                            {
+                                <li><a class="dropdown-item" href="@Url.Action("MyFollowed", "Agent")">Followed Agents</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Settings", "User")">User setting</a></li>
+                            }
+                            else if (userRole == "Supplier")
+                            {
+                                <li><a class="dropdown-item" href="@Url.Action("MyAgents", "Agent")">My Agents</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Settings", "Supplier")">User setting</a></li>
+                            }
+                            else if (userRole == "Staff")
+                            {
+                                <li><a class="dropdown-item" href="@Url.Action("SystemControl", "Staff")">System Control</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Settings", "Staff")">User setting</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("AgentManager", "Staff")">Agent manager</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("SupplierManager", "Staff")">Supplier manager</a></li>
+                            }
+                            else if (userRole == "Admin")
+                            {
+                                <li><a class="dropdown-item" href="@Url.Action("StaffManager", "Admin")">Staff manager</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("SystemManager", "Admin")">System manager</a></li>
+                            }
+                            <li><hr class="dropdown-divider" /></li>
+                            <li><a class="dropdown-item" href="@Url.Action("Logout", "Auth")">Logout</a></li>
+                        </ul>
+                    </div>
+                }
             </div>
-        </nav>
+        </div>
     </header>
-    <div class="container">
+    @if (TempData["ErrorMessage"] != null)
+    {
+        <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+    }
+    @if (!string.IsNullOrEmpty(ViewBag.DebugUserName as string) || !string.IsNullOrEmpty(ViewBag.DebugRole as string) || !string.IsNullOrEmpty(ViewBag.DebugUserId as string))
+    {
+        <div class="alert alert-info">
+            <b>DEBUG:</b> UserName: @ViewBag.DebugUserName | Role: @ViewBag.DebugRole | UserId: @ViewBag.DebugUserId
+        </div>
+    }
+    <div class="container" style="max-width: 1200px; margin: 0 auto; padding: 0 0;">
         <main role="main" class="pb-3">
             @RenderBody()
         </main>
     </div>
-
-    <footer class="border-top footer text-muted">
+    <footer style="background: #222; color: #fff; padding: 28px 0 18px 0; margin-top: 40px; border-top: 2px solid #e1e1e1;">
         <div class="container">
-            &copy; 2025 - AI_Agent_WebApp.Web - <a asp-area="" asp-controller="Home" asp-action="Privacy">Privacy</a>
+            <div class="row">
+                <div class="col-md-4">
+                    <h5 class="mb-3">Categories</h5>
+                    <ul class="list-unstyled">
+                        @if (ViewBag.Categories != null)
+                        {
+                            var catList = (List<AI_Agent_WebApp.Models.Entities.Category>)ViewBag.Categories;
+                            for (int i = 0; i < catList.Count; i += 2)
+                            {
+                                <li><a href="@Url.Action("Search", "Agent", new { categoryId = catList[i].Id })" style="color: #fff; text-decoration: underline;">@catList[i].Name</a></li>
+                            }
+                        }
+                        else
+                        {
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 1 })" style="color: #fff; text-decoration: underline;">Design</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 2 })" style="color: #fff; text-decoration: underline;">Research</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 3 })" style="color: #fff; text-decoration: underline;">Science</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 4 })" style="color: #fff; text-decoration: underline;">Personal Assistant</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 5 })" style="color: #fff; text-decoration: underline;">Coding</a></li>
+                        }
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">Categories</h5>
+                    <ul class="list-unstyled">
+                        @if (ViewBag.Categories != null)
+                        {
+                            var catList = (List<AI_Agent_WebApp.Models.Entities.Category>)ViewBag.Categories;
+                            for (int i = 1; i < catList.Count; i += 2)
+                            {
+                                <li><a href="@Url.Action("Search", "Agent", new { categoryId = catList[i].Id })" style="color: #fff; text-decoration: underline;">@catList[i].Name</a></li>
+                            }
+                        }
+                        else
+                        {
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 6 })" style="color: #fff; text-decoration: underline;">Data Analysis</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 7 })" style="color: #fff; text-decoration: underline;">Marketing</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 8 })" style="color: #fff; text-decoration: underline;">Content Creation</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 9 })" style="color: #fff; text-decoration: underline;">Voice AI Agents</a></li>
+                            <li><a href="@Url.Action("Search", "Agent", new { categoryId = 10 })" style="color: #fff; text-decoration: underline;">Finance</a></li>
+                        }
+                    </ul>
+                </div>
+                <div class="col-md-4">
+                    <h5 class="mb-3">More</h5>
+                    <ul class="list-unstyled">
+                        <li><a href="@Url.Action("Register", "Auth")" style="color: #fff; text-decoration: underline;">Register</a></li>
+                        <li><a href="@Url.Action("Login", "Auth")" style="color: #fff; text-decoration: underline;">Sign In</a></li>
+                        <li><a href="/Blog" style="color: #fff; text-decoration: underline;">Blog</a></li>
+                        <li><a href="@Url.Action("Privacy", "Home")" style="color: #fff; text-decoration: underline;">Privacy Policy</a></li>
+                        <li><a href="@Url.Action("Index", "Home")" style="color: #fff; text-decoration: underline;">Contact Us</a></li>
+                    </ul>
+                </div>
+            </div>
         </div>
     </footer>
     <script src="~/lib/jquery/dist/jquery.min.js"></script>

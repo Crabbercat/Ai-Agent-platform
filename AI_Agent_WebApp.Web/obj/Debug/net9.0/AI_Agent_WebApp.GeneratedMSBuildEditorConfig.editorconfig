@@ -36,6 +36,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRcQWdlbnRMaXN0LmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Agent/AllAgents.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRcQWxsQWdlbnRzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Agent/CreateAgent.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRcQ3JlYXRlQWdlbnQuY3NodG1s
 build_metadata.AdditionalFiles.CssScope = 
@@ -50,6 +54,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Agent/MyAgents.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRcTXlBZ2VudHMuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Agent/Search.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRcU2VhcmNoLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Article/ArticleDetails.cshtml]
@@ -70,6 +78,18 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Article/MyArticles.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXJ0aWNsZVxNeUFydGljbGVzLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Auth/Login.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxMb2dpbi5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Auth/Register.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3Rlci5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Auth/RegisterSupplier.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3RlclN1cHBsaWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Home/Index.cshtml]

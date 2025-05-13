@@ -1,8 +1,68 @@
-﻿@{
-    ViewData["Title"] = "Home Page";
+﻿@model IEnumerable<AI_Agent_WebApp.Models.Entities.Agent>
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Home";
 }
-
-<div class="text-center">
-    <h1 class="display-4">Welcome</h1>
-    <p>Learn about <a href="https://learn.microsoft.com/aspnet/core">building Web apps with ASP.NET Core</a>.</p>
+@section Head {
+    <link rel="stylesheet" href="~/css/site-agents.css" />
+}
+@if (TempData["ErrorMessage"] != null)
+{
+    <div class="alert alert-danger">@TempData["ErrorMessage"]</div>
+}
+@if (!string.IsNullOrEmpty(ViewBag.DebugUserName as string) || !string.IsNullOrEmpty(ViewBag.DebugRole as string) || !string.IsNullOrEmpty(ViewBag.DebugUserId as string))
+{
+    <div class="alert alert-info">
+        <b>DEBUG:</b> UserName: @ViewBag.DebugUserName | Role: @ViewBag.DebugRole | UserId: @ViewBag.DebugUserId
+    </div>
+}
+<div class="hero">
+    <h1>AIDomain</h1>
+    <p>Explore the right AI for every domain</p>
+    <div class="search-box">
+        <input type="text" placeholder="Search AI tools, tags, or categories..." />
+        <button type="submit">Search</button>
+    </div>
+</div>
+<div class="content-container">
+    <div class="ai-grid" id="aiContainer">
+        @if (Model != null && Model.Any())
+        {
+            foreach (var agent in Model)
+            {
+                var followerCount = agent.Follows?.Count() ?? 0;
+                <div class="ai-container" tabindex="0" title="Xem chi tiết về @agent.Name" onclick="window.location.href='@Url.Action("Details", "Agent", new { id = agent.Id })'">
+                    <div class="ai-header">
+                        <div class="ai-logo-name">
+                            <img src="@((!string.IsNullOrEmpty(agent.ImagePath) ? Url.Content("/" + agent.ImagePath.Replace("wwwroot/", "")) : "https://via.placeholder.com/50?text=AI"))" alt="@agent.Name" class="ai-logo" />
+                            <h2 class="ai-name">@agent.Name</h2>
+                        </div>
+                        <div class="ai-states">
+                            <span class="state state1">@(agent.IsActive ? "Active" : "Inactive")</span>
+                            <span class="state state2">@agent.PaymentType?.Name</span>
+                        </div>
+                    </div>
+                    <div class="ai-description">
+                        <p>@agent.Description</p>
+                    </div>
+                    <div class="ai-footer">
+                        <div class="ai-stats">
+                            <span class="comment-count">💬 0</span>
+                            <span class="follower-count">❤️ @followerCount</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div>Không có agent nào.</div>
+        }
+    </div>
+    <div class="pagination">
+        <!-- Nếu muốn phân trang thực, cần thêm logic server-side hoặc JS -->
+    </div>
+    <div class="blog-section">
+        <h2 class="section-title">Our Latest Blog Posts</h2>
+    </div>
 </div>

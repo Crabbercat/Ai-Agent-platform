@@ -3,6 +3,14 @@
   "WorkspaceRootPath": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{15E21035-43B5-459E-B69A-DF6F09935C28}|AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj|d:\\onedrive - the university of technology\\document\\hk4\\2.pbl3\\ai-agent-platform\\ai_agent_webapp.web\\migrations\\20250511091302_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15E21035-43B5-459E-B69A-DF6F09935C28}|AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj|solutionrelative:ai_agent_webapp.web\\migrations\\20250511091302_initialcreate.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{15E21035-43B5-459E-B69A-DF6F09935C28}|AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj|d:\\onedrive - the university of technology\\document\\hk4\\2.pbl3\\ai-agent-platform\\ai_agent_webapp.web\\migrations\\20250511091302_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{15E21035-43B5-459E-B69A-DF6F09935C28}|AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj|solutionrelative:ai_agent_webapp.web\\migrations\\20250511091302_initialcreate.designer.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{15E21035-43B5-459E-B69A-DF6F09935C28}|AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj|d:\\onedrive - the university of technology\\document\\hk4\\2.pbl3\\ai-agent-platform\\ai_agent_webapp.web\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{15E21035-43B5-459E-B69A-DF6F09935C28}|AI_Agent_WebApp.Web\\AI_Agent_WebApp.csproj|solutionrelative:ai_agent_webapp.web\\data\\dbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
@@ -23,12 +31,38 @@
             {
               "$type": "Document",
               "DocumentIndex": 0,
+              "Title": "20250511091302_InitialCreate.cs",
+              "DocumentMoniker": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.cs",
+              "RelativeDocumentMoniker": "AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.cs",
+              "ToolTip": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.cs",
+              "RelativeToolTip": "AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T09:15:33.259Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
+              "Title": "20250511091302_InitialCreate.Designer.cs",
+              "DocumentMoniker": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.Designer.cs",
+              "RelativeDocumentMoniker": "AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.Designer.cs",
+              "ToolTip": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.Designer.cs",
+              "RelativeToolTip": "AI_Agent_WebApp.Web\\Migrations\\20250511091302_InitialCreate.Designer.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2025-05-11T09:15:31.844Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 2,
               "Title": "DbContext.cs",
               "DocumentMoniker": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\Data\\DbContext.cs",
               "RelativeDocumentMoniker": "AI_Agent_WebApp.Web\\Data\\DbContext.cs",
               "ToolTip": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\Data\\DbContext.cs",
               "RelativeToolTip": "AI_Agent_WebApp.Web\\Data\\DbContext.cs",
-              "ViewState": "AgIAAFgAAAAAAAAAAAAAAF8AAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAFMAAAAAAAAAAAAAAGEAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2025-05-11T09:10:02.344Z",
               "EditorCaption": ""

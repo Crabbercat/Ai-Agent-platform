@@ -1,0 +1,100 @@
+@model AI_Agent_WebApp.Models.ViewModels.AgentSearchViewModel
+@{
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    ViewData["Title"] = "Tìm kiếm AI Agent";
+}
+@section Head {
+    <link rel="stylesheet" href="~/css/site-agents.css" />
+}
+<div class="hero">
+    <h1>Tìm kiếm AI Agent</h1>
+    <div class="search-box d-flex align-items-center">
+        <input type="text" name="SearchTerm" id="searchTerm" placeholder="Tìm kiếm AI, tags, hoặc danh mục..." class="form-control me-2" value="@Model.SearchTerm" />
+        <select name="CategoryId" id="categoryId" class="form-select me-2" style="width: 180px;">
+            <option value="">Tất cả danh mục</option>
+            @foreach (var cat in Model.Categories)
+            {
+                if (Model.CategoryId == cat.Id)
+                {
+                    <option value="@cat.Id" selected>@cat.Name</option>
+                }
+                else
+                {
+                    <option value="@cat.Id">@cat.Name</option>
+                }
+            }
+        </select>
+        <select name="PaymentTypeId" id="paymentTypeId" class="form-select me-2" style="width: 180px;">
+            <option value="">Tất cả loại trả phí</option>
+            @foreach (var pt in Model.PaymentTypes)
+            {
+                if (Model.PaymentTypeId == pt.Id)
+                {
+                    <option value="@pt.Id" selected>@pt.Name</option>
+                }
+                else
+                {
+                    <option value="@pt.Id">@pt.Name</option>
+                }
+            }
+        </select>
+        <button class="btn btn-primary" onclick="searchAgents(1)">Tìm kiếm</button>
+    </div>
+</div>
+<div class="content-container">
+    <div class="ai-grid" id="aiContainer">
+        @if (Model.Agents != null && Model.Agents.Any())
+        {
+            foreach (var agent in Model.Agents)
+            {
+                var followerCount = agent.Follows?.Count() ?? 0;
+                <div class="ai-container" tabindex="0" title="Xem chi tiết về @agent.Name" onclick="window.location.href='@Url.Action("Details", "Agent", new { id = agent.Id })'">
+                    <div class="ai-header">
+                        <div class="ai-logo-name">
+                            <img src="@((!string.IsNullOrEmpty(agent.ImagePath) ? Url.Content("/" + agent.ImagePath.Replace("wwwroot/", "")) : "https://via.placeholder.com/50?text=AI"))" alt="@agent.Name" class="ai-logo" />
+                            <h2 class="ai-name">@agent.Name</h2>
+                        </div>
+                        <div class="ai-states">
+                            <span class="state state1">@(agent.IsActive ? "Active" : "Inactive")</span>
+                            <span class="state state2">@agent.PaymentType?.Name</span>
+                        </div>
+                    </div>
+                    <div class="ai-description">
+                        <p>@agent.Description</p>
+                    </div>
+                    <div class="ai-footer">
+                        <div class="ai-stats">
+                            <span class="comment-count">💬 0</span>
+                            <span class="follower-count">❤️ @followerCount</span>
+                        </div>
+                    </div>
+                </div>
+            }
+        }
+        else
+        {
+            <div>Không có agent nào.</div>
+        }
+    </div>
+    <div class="pagination mt-4" id="pagination"></div>
+</div>
+@section Scripts {
+    <script>
+        let currentPage = @Model.Page;
+        let totalPages = @Model.TotalPages;
+        function searchAgents(page) {
+            const searchTerm = document.getElementById('searchTerm').value;
+            const categoryId = document.getElementById('categoryId').value;
+            const paymentTypeId = document.getElementById('paymentTypeId').value;
+            window.location.href = `@Url.Action("Search", "Agent")?searchTerm=${encodeURIComponent(searchTerm)}&categoryId=${categoryId}&paymentTypeId=${paymentTypeId}&page=${page}`;
+        }
+        function renderPagination() {
+            let html = '';
+            for (let i = 1; i <= totalPages; i++) {
+                html += `<button class='btn btn-sm ${i === currentPage ? "btn-primary" : "btn-outline-primary"}' onclick='searchAgents(${i})'>${i}</button> `;
+            }
+            document.getElementById('pagination').innerHTML = html;
+        }
+        renderPagination();
+    </script>
+}

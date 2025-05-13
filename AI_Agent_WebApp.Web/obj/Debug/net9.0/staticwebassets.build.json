@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "+W06W2OggmwilNazh1LZlzeeOaFRPzFAHVVcuZLKyfM=",
+  "Hash": "aLxt2WiIDmFsA4gN4z854xKDbsqs1pABP7zVoex78wY=",
   "Source": "AI_Agent_WebApp",
   "BasePath": "_content/AI_Agent_WebApp",
   "Mode": "Default",
@@ -101,12 +101,12 @@
       "OriginalItemSpec": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap-grid.rtl.css.map"
     },
     {
-      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-61n19gt1b8.gz",
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-i8ucuhsgja.gz",
       "SourceId": "AI_Agent_WebApp",
       "SourceType": "Discovered",
       "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\",
       "BasePath": "_content/AI_Agent_WebApp",
-      "RelativePath": "favicon#[.{fingerprint=61n19gt1b8}]?.ico.gz",
+      "RelativePath": "favicon#[.{fingerprint=i8ucuhsgja}]?.ico.gz",
       "AssetKind": "All",
       "AssetMode": "All",
       "AssetRole": "Alternative",
@@ -115,8 +115,8 @@
       "RelatedAsset": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
       "AssetTraitName": "Content-Encoding",
       "AssetTraitValue": "gzip",
-      "Fingerprint": "lir1p715ud",
-      "Integrity": "jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8=",
+      "Fingerprint": "3iqcugwdr8",
+      "Integrity": "1ZCFsGaxiMK1rr5fQlLgY9XJxCak4thtxwTjXZJoxo0=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico"
@@ -941,6 +941,27 @@
       "OriginalItemSpec": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\lib\\bootstrap\\dist\\css\\bootstrap.rtl.min.css.map"
     },
     {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\pv8bmvb4k9-jcur7kpgba.gz",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "css/site-agents#[.{fingerprint=jcur7kpgba}]?.css.gz",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Alternative",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site-agents.css",
+      "AssetTraitName": "Content-Encoding",
+      "AssetTraitValue": "gzip",
+      "Fingerprint": "3z9v0ks3mv",
+      "Integrity": "wWsSPuKyJOK2xWCiu8E9iSOjop1kC56KlS9fmmSepjY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site-agents.css"
+    },
+    {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\q3ya6i4kb8-qesaa3a1fm.gz",
       "SourceId": "AI_Agent_WebApp",
       "SourceType": "Discovered",
@@ -1403,6 +1424,69 @@
       "OriginalItemSpec": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AI_Agent_WebApp.bundle.scp.css"
     },
     {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\.copilot-move",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "#[.{fingerprint}]?.copilot-move",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "5ipweew5fc",
+      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\.copilot-move"
+    },
+    {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\AIDomain.png",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "AIDomain#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "yo67f95wpm",
+      "Integrity": "Xl/Wk2QGv3HtWVZlLj2iFcB4QAr+cVBIavhPtj2vDW4=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\AIDomain.png"
+    },
+    {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site-agents.css",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "css/site-agents#[.{fingerprint}]?.css",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "jcur7kpgba",
+      "Integrity": "nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\css\\site-agents.css"
+    },
+    {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site.css",
       "SourceId": "AI_Agent_WebApp",
       "SourceType": "Discovered",
@@ -1424,6 +1508,27 @@
       "OriginalItemSpec": "wwwroot\\css\\site.css"
     },
     {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\daff5bd27b6bc935907a.jpg",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "daff5bd27b6bc935907a#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "7ziw4aep7l",
+      "Integrity": "7cvl7p9MF+zGIg4u3h4O3naZWMIDWMw25aIo5E3K+Y8=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\daff5bd27b6bc935907a.jpg"
+    },
+    {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
       "SourceId": "AI_Agent_WebApp",
       "SourceType": "Discovered",
@@ -1438,8 +1543,8 @@
       "RelatedAsset": "",
       "AssetTraitName": "",
       "AssetTraitValue": "",
-      "Fingerprint": "61n19gt1b8",
-      "Integrity": "Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=",
+      "Fingerprint": "i8ucuhsgja",
+      "Integrity": "EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg=",
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\favicon.ico"
@@ -3064,6 +3169,88 @@
   ],
   "Endpoints": [
     {
+      "Route": ".5ipweew5fc.copilot-move",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\.copilot-move",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 05:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "5ipweew5fc"
+        },
+        {
+          "Name": "label",
+          "Value": ".copilot-move"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
+      "Route": ".copilot-move",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\.copilot-move",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "0"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "application/octet-stream"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 05:24:06 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
+        }
+      ]
+    },
+    {
       "Route": "AI_Agent_WebApp.bundle.scp.css",
       "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\t6aiw223n3-gxteyfa2e2.gz",
       "Selectors": [
@@ -3660,6 +3847,386 @@
       ]
     },
     {
+      "Route": "AIDomain.png",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\AIDomain.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xl/Wk2QGv3HtWVZlLj2iFcB4QAr+cVBIavhPtj2vDW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 19:21:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xl/Wk2QGv3HtWVZlLj2iFcB4QAr+cVBIavhPtj2vDW4="
+        }
+      ]
+    },
+    {
+      "Route": "AIDomain.yo67f95wpm.png",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\AIDomain.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7025"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Xl/Wk2QGv3HtWVZlLj2iFcB4QAr+cVBIavhPtj2vDW4=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 19:21:02 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "yo67f95wpm"
+        },
+        {
+          "Name": "label",
+          "Value": "AIDomain.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Xl/Wk2QGv3HtWVZlLj2iFcB4QAr+cVBIavhPtj2vDW4="
+        }
+      ]
+    },
+    {
+      "Route": "css/site-agents.css",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\pv8bmvb4k9-jcur7kpgba.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000930232558"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wWsSPuKyJOK2xWCiu8E9iSOjop1kC56KlS9fmmSepjY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 16:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site-agents.css",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site-agents.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 16:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site-agents.css.gz",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\pv8bmvb4k9-jcur7kpgba.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wWsSPuKyJOK2xWCiu8E9iSOjop1kC56KlS9fmmSepjY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 16:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-wWsSPuKyJOK2xWCiu8E9iSOjop1kC56KlS9fmmSepjY="
+        }
+      ]
+    },
+    {
+      "Route": "css/site-agents.jcur7kpgba.css",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\pv8bmvb4k9-jcur7kpgba.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000930232558"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wWsSPuKyJOK2xWCiu8E9iSOjop1kC56KlS9fmmSepjY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 16:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jcur7kpgba"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site-agents.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site-agents.jcur7kpgba.css",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\css\\site-agents.css",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "3374"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 16:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jcur7kpgba"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site-agents.css"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-nWb0+gnHtb3ZPiZA1wg5YqLFWS2fJnXNIMfIZIjZ5hg="
+        }
+      ]
+    },
+    {
+      "Route": "css/site-agents.jcur7kpgba.css.gz",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\pv8bmvb4k9-jcur7kpgba.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "1074"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "text/css"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"wWsSPuKyJOK2xWCiu8E9iSOjop1kC56KlS9fmmSepjY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 11 May 2025 16:04:59 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "jcur7kpgba"
+        },
+        {
+          "Name": "label",
+          "Value": "css/site-agents.css.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-wWsSPuKyJOK2xWCiu8E9iSOjop1kC56KlS9fmmSepjY="
+        }
+      ]
+    },
+    {
       "Route": "css/site.b9sayid5wm.css",
       "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\b6zsnntick-b9sayid5wm.gz",
       "Selectors": [
@@ -3958,71 +4525,8 @@
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-61n19gt1b8.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000411015208"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2432"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.61n19gt1b8.ico",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
+      "Route": "daff5bd27b6bc935907a.7ziw4aep7l.jpg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\daff5bd27b6bc935907a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4031,19 +4535,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "5430"
+          "Value": "1971"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
+          "Value": "\"7cvl7p9MF+zGIg4u3h4O3naZWMIDWMw25aIo5E3K+Y8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
+          "Value": "Mon, 12 May 2025 02:15:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4053,21 +4557,21 @@
       "EndpointProperties": [
         {
           "Name": "fingerprint",
-          "Value": "61n19gt1b8"
+          "Value": "7ziw4aep7l"
         },
         {
           "Name": "label",
-          "Value": "favicon.ico"
+          "Value": "daff5bd27b6bc935907a.jpg"
         },
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-7cvl7p9MF+zGIg4u3h4O3naZWMIDWMw25aIo5E3K+Y8="
         }
       ]
     },
     {
-      "Route": "favicon.61n19gt1b8.ico.gz",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-61n19gt1b8.gz",
+      "Route": "daff5bd27b6bc935907a.jpg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\daff5bd27b6bc935907a.jpg",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4076,127 +4580,19 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2432"
+          "Value": "1971"
         },
         {
           "Name": "Content-Type",
-          "Value": "image/x-icon"
+          "Value": "image/jpeg"
         },
         {
           "Name": "ETag",
-          "Value": "\"jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8=\""
+          "Value": "\"7cvl7p9MF+zGIg4u3h4O3naZWMIDWMw25aIo5E3K+Y8=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "61n19gt1b8"
-        },
-        {
-          "Name": "label",
-          "Value": "favicon.ico.gz"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.ico",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-61n19gt1b8.gz",
-      "Selectors": [
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip",
-          "Quality": "0.000411015208"
-        }
-      ],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "2432"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        },
-        {
-          "Name": "Content-Encoding",
-          "Value": "gzip"
-        },
-        {
-          "Name": "Vary",
-          "Value": "Content-Encoding"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "W/\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
-        }
-      ]
-    },
-    {
-      "Route": "favicon.ico",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "5430"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "image/x-icon"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
+          "Value": "Mon, 12 May 2025 02:15:43 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4206,13 +4602,76 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-Jtxf9L+5ITKRc1gIRl4VbUpGkRNfOBXjYTdhJD4facM="
+          "Value": "sha256-7cvl7p9MF+zGIg4u3h4O3naZWMIDWMw25aIo5E3K+Y8="
         }
       ]
     },
     {
-      "Route": "favicon.ico.gz",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-61n19gt1b8.gz",
+      "Route": "favicon.i8ucuhsgja.ico",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-i8ucuhsgja.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000127420999"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7847"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ZCFsGaxiMK1rr5fQlLgY9XJxCak4thtxwTjXZJoxo0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 04:18:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i8ucuhsgja"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.i8ucuhsgja.ico",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
       "Selectors": [],
       "ResponseHeaders": [
         {
@@ -4221,7 +4680,7 @@
         },
         {
           "Name": "Content-Length",
-          "Value": "2432"
+          "Value": "31382"
         },
         {
           "Name": "Content-Type",
@@ -4229,11 +4688,201 @@
         },
         {
           "Name": "ETag",
-          "Value": "\"jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8=\""
+          "Value": "\"EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg=\""
         },
         {
           "Name": "Last-Modified",
-          "Value": "Sun, 11 May 2025 03:18:47 GMT"
+          "Value": "Mon, 12 May 2025 04:18:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i8ucuhsgja"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.i8ucuhsgja.ico.gz",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-i8ucuhsgja.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ZCFsGaxiMK1rr5fQlLgY9XJxCak4thtxwTjXZJoxo0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 04:18:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "i8ucuhsgja"
+        },
+        {
+          "Name": "label",
+          "Value": "favicon.ico.gz"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-1ZCFsGaxiMK1rr5fQlLgY9XJxCak4thtxwTjXZJoxo0="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-i8ucuhsgja.gz",
+      "Selectors": [
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip",
+          "Quality": "0.000127420999"
+        }
+      ],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7847"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ZCFsGaxiMK1rr5fQlLgY9XJxCak4thtxwTjXZJoxo0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 04:18:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "no-cache"
+        },
+        {
+          "Name": "Content-Encoding",
+          "Value": "gzip"
+        },
+        {
+          "Name": "Vary",
+          "Value": "Content-Encoding"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "W/\"EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg=\""
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\favicon.ico",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "31382"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 04:18:07 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-EqYT6erbajVWOqKnyCC2gvGurh2ZAlvE+qKEucYtsPg="
+        }
+      ]
+    },
+    {
+      "Route": "favicon.ico.gz",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\4l3vdub88f-i8ucuhsgja.gz",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "7847"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/x-icon"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"1ZCFsGaxiMK1rr5fQlLgY9XJxCak4thtxwTjXZJoxo0=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 12 May 2025 04:18:07 GMT"
         },
         {
           "Name": "Cache-Control",
@@ -4251,7 +4900,7 @@
       "EndpointProperties": [
         {
           "Name": "integrity",
-          "Value": "sha256-jcY0RXFOlcp4VNTCcYQtWVZZBlr+ZY+AOv6/0S5dnF8="
+          "Value": "sha256-1ZCFsGaxiMK1rr5fQlLgY9XJxCak4thtxwTjXZJoxo0="
         }
       ]
     },

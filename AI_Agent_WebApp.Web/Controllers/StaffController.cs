@@ -2,7 +2,7 @@ using AI_Agent_WebApp.Models.Entities;
 using AI_Agent_WebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
 
-namespace AI_Agent_WebApp.Web.Controllers
+namespace AI_Agent_WebApp.Controllers
 {
     public class StaffController : Controller
     {

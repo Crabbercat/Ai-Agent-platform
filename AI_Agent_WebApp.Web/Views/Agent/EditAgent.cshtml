@@ -1,17 +1,47 @@
 @model AI_Agent_WebApp.Models.Entities.Agent
 @{
     ViewData["Title"] = "Chỉnh sửa AI-Agent";
+    var categories = ViewBag.Categories as List<AI_Agent_WebApp.Models.Entities.Category>;
+    var paymentTypes = ViewBag.PaymentTypes as List<AI_Agent_WebApp.Models.Entities.PaymentType>;
 }
 <h2>Chỉnh sửa AI-Agent</h2>
-<form asp-action="Edit">
+<form asp-action="Edit" enctype="multipart/form-data">
     <input type="hidden" asp-for="Id" />
-    <div class="form-group">
+    <div class="form-group mb-2">
         <label asp-for="Name"></label>
         <input asp-for="Name" class="form-control" />
     </div>
-    <div class="form-group">
+    <div class="form-group mb-2">
         <label asp-for="Description"></label>
         <textarea asp-for="Description" class="form-control"></textarea>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="CategoryId">Danh mục</label>
+        <select asp-for="CategoryId" class="form-control" asp-items="@(new SelectList(categories, "Id", "Name"))"></select>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="PaymentTypeId">Loại thanh toán</label>
+        <select asp-for="PaymentTypeId" class="form-control" asp-items="@(new SelectList(paymentTypes, "Id", "Name"))"></select>
+    </div>
+    <div class="form-group mb-2">
+        <label asp-for="Url">Website (nếu có)</label>
+        <input asp-for="Url" class="form-control" />
+    </div>
+    <div class="form-group mb-3">
+        <label>Ảnh đại diện hiện tại</label><br />
+        @if (!string.IsNullOrEmpty(Model.ImagePath))
+        {
+            var imagePath = Model.ImagePath.StartsWith("wwwroot/") ? Model.ImagePath.Substring(7) : Model.ImagePath;
+            <img src="/@imagePath" alt="Agent Image" style="max-width:120px; border-radius:12px;" />
+        }
+        else
+        {
+            <span class="text-muted">Chưa có ảnh</span>
+        }
+    </div>
+    <div class="form-group mb-3">
+        <label asp-for="ImageFile">Thay ảnh đại diện mới (nếu muốn)</label>
+        <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />
     </div>
     <button type="submit" class="btn btn-primary">Lưu thay đổi</button>
 </form>

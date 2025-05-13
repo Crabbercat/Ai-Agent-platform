@@ -12,7 +12,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AI_Agent_WebApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250511091302_InitialCreate")]
+    [Migration("20250511165523_InitialCreate")]
     partial class InitialCreate
     {
         /// <inheritdoc />
@@ -58,6 +58,9 @@ namespace AI_Agent_WebApp.Migrations
                     b.Property<int>("SupplierId")
                         .HasColumnType("int");
 
+                    b.Property<string>("Url")
+                        .HasColumnType("nvarchar(max)");
+
                     b.HasKey("Id");
 
                     b.HasIndex("CategoryId");
@@ -79,7 +82,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "NovaFlux",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://nova-flux.com"
                         },
                         new
                         {
@@ -91,7 +95,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "QuantaNova",
                             PaymentTypeId = 2,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://quanta-nova.com"
                         },
                         new
                         {
@@ -103,7 +108,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "ByteWarden",
                             PaymentTypeId = 3,
-                            SupplierId = 4
+                            SupplierId = 4,
+                            Url = "https://bytewarden.com"
                         },
                         new
                         {
@@ -115,7 +121,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "EchoPulse",
                             PaymentTypeId = 4,
-                            SupplierId = 5
+                            SupplierId = 5,
+                            Url = "https://echo-pulse.com"
                         },
                         new
                         {
@@ -127,7 +134,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "ZenithBot",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://zenith-bot.com"
                         },
                         new
                         {
@@ -139,7 +147,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "AstroSage",
                             PaymentTypeId = 2,
-                            SupplierId = 3
+                            SupplierId = 3,
+                            Url = "https://astro-sage.com"
                         },
                         new
                         {
@@ -151,7 +160,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "GlimmerAI",
                             PaymentTypeId = 3,
-                            SupplierId = 4
+                            SupplierId = 4,
+                            Url = "https://glimmer-ai.com"
                         },
                         new
                         {
@@ -163,7 +173,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "OrbitalNest",
                             PaymentTypeId = 4,
-                            SupplierId = 5
+                            SupplierId = 5,
+                            Url = "https://orbital-nest.com"
                         },
                         new
                         {
@@ -175,7 +186,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "Synthara",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://synthara.com"
                         },
                         new
                         {
@@ -187,7 +199,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "ChronaEdge",
                             PaymentTypeId = 2,
-                            SupplierId = 3
+                            SupplierId = 3,
+                            Url = "https://chrona-edge.com"
                         },
                         new
                         {
@@ -199,7 +212,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "VantaSpark",
                             PaymentTypeId = 3,
-                            SupplierId = 4
+                            SupplierId = 4,
+                            Url = "https://vanta-spark.com"
                         },
                         new
                         {
@@ -211,7 +225,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "LucidForge",
                             PaymentTypeId = 4,
-                            SupplierId = 5
+                            SupplierId = 5,
+                            Url = "https://lucidforge.com"
                         },
                         new
                         {
@@ -223,7 +238,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "NeuraWhirl",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://neura-whirl.com"
                         },
                         new
                         {
@@ -235,7 +251,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "PrismShift",
                             PaymentTypeId = 2,
-                            SupplierId = 3
+                            SupplierId = 3,
+                            Url = "https://prism-shift.com"
                         },
                         new
                         {
@@ -247,7 +264,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "HexaTune",
                             PaymentTypeId = 3,
-                            SupplierId = 4
+                            SupplierId = 4,
+                            Url = "https://hexa-tune.com"
                         },
                         new
                         {
@@ -259,7 +277,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "OmniScribe",
                             PaymentTypeId = 4,
-                            SupplierId = 5
+                            SupplierId = 5,
+                            Url = "https://omni-scribe.com"
                         },
                         new
                         {
@@ -271,7 +290,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "AeroMind",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://aero-mind.com"
                         },
                         new
                         {
@@ -283,7 +303,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "PulseCraft",
                             PaymentTypeId = 2,
-                            SupplierId = 3
+                            SupplierId = 3,
+                            Url = "https://pulse-craft.com"
                         },
                         new
                         {
@@ -295,7 +316,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "TerraByte",
                             PaymentTypeId = 3,
-                            SupplierId = 4
+                            SupplierId = 4,
+                            Url = "https://terra-byte.com"
                         },
                         new
                         {
@@ -307,7 +329,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "NexonNode",
                             PaymentTypeId = 4,
-                            SupplierId = 5
+                            SupplierId = 5,
+                            Url = "https://nexon-node.com"
                         },
                         new
                         {
@@ -319,7 +342,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "StellarWeave",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://stellar-weave.com"
                         },
                         new
                         {
@@ -331,7 +355,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "QuirkBot",
                             PaymentTypeId = 2,
-                            SupplierId = 3
+                            SupplierId = 3,
+                            Url = "https://quirk-bot.com"
                         },
                         new
                         {
@@ -343,7 +368,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "CodeRipple",
                             PaymentTypeId = 3,
-                            SupplierId = 4
+                            SupplierId = 4,
+                            Url = "https://code-ripple.com"
                         },
                         new
                         {
@@ -355,7 +381,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "VoxenCore",
                             PaymentTypeId = 4,
-                            SupplierId = 5
+                            SupplierId = 5,
+                            Url = "https://voxen-core.com"
                         },
                         new
                         {
@@ -367,7 +394,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "MindLoom",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://mind-loom.com"
                         },
                         new
                         {
@@ -379,7 +407,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "KairoUnit",
                             PaymentTypeId = 2,
-                            SupplierId = 3
+                            SupplierId = 3,
+                            Url = "https://kairo-unit.com"
                         },
                         new
                         {
@@ -391,7 +420,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "LumenQuest",
                             PaymentTypeId = 3,
-                            SupplierId = 4
+                            SupplierId = 4,
+                            Url = "https://lumen-quest.com"
                         },
                         new
                         {
@@ -403,7 +433,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "RiftSync",
                             PaymentTypeId = 4,
-                            SupplierId = 5
+                            SupplierId = 5,
+                            Url = "https://rift-sync.com"
                         },
                         new
                         {
@@ -415,7 +446,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "CerebraLink",
                             PaymentTypeId = 1,
-                            SupplierId = 2
+                            SupplierId = 2,
+                            Url = "https://cerebra-link.com"
                         },
                         new
                         {
@@ -427,7 +459,8 @@ namespace AI_Agent_WebApp.Migrations
                             IsActive = true,
                             Name = "HaloNest",
                             PaymentTypeId = 2,
-                            SupplierId = 3
+                            SupplierId = 3,
+                            Url = "https://halo-nest.com"
                         });
                 });
 
@@ -530,6 +563,63 @@ namespace AI_Agent_WebApp.Migrations
                         {
                             Id = 10,
                             Name = "Finance"
+                        });
+                });
+
+            modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Follow", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<int>("AgentId")
+                        .HasColumnType("int");
+
+                    b.Property<DateTime>("FollowedAt")
+                        .HasColumnType("datetime2");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("AgentId");
+
+                    b.HasIndex("UserId", "AgentId")
+                        .IsUnique();
+
+                    b.ToTable("Follows");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 1,
+                            AgentId = 1,
+                            FollowedAt = new DateTime(2024, 2, 1, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 6
+                        },
+                        new
+                        {
+                            Id = 2,
+                            AgentId = 2,
+                            FollowedAt = new DateTime(2024, 2, 2, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 6
+                        },
+                        new
+                        {
+                            Id = 3,
+                            AgentId = 1,
+                            FollowedAt = new DateTime(2024, 2, 3, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 7
+                        },
+                        new
+                        {
+                            Id = 4,
+                            AgentId = 3,
+                            FollowedAt = new DateTime(2024, 2, 4, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            UserId = 8
                         });
                 });
 
@@ -685,46 +775,6 @@ namespace AI_Agent_WebApp.Migrations
                         },
                         new
                         {
-                            Id = 2,
-                            CreatedAt = new DateTime(2024, 1, 2, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "supplier1@example.com",
-                            FullName = "Supplier One",
-                            PasswordHash = "supplier1hash",
-                            Role = "Supplier",
-                            Username = "supplier1"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            CreatedAt = new DateTime(2024, 1, 3, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "supplier2@example.com",
-                            FullName = "Supplier Two",
-                            PasswordHash = "supplier2hash",
-                            Role = "Supplier",
-                            Username = "supplier2"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            CreatedAt = new DateTime(2024, 1, 4, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "supplier3@example.com",
-                            FullName = "Supplier Three",
-                            PasswordHash = "supplier3hash",
-                            Role = "Supplier",
-                            Username = "supplier3"
-                        },
-                        new
-                        {
-                            Id = 5,
-                            CreatedAt = new DateTime(2024, 1, 5, 8, 0, 0, 0, DateTimeKind.Unspecified),
-                            Email = "supplier4@example.com",
-                            FullName = "Supplier Four",
-                            PasswordHash = "supplier4hash",
-                            Role = "Supplier",
-                            Username = "supplier4"
-                        },
-                        new
-                        {
                             Id = 6,
                             CreatedAt = new DateTime(2024, 1, 6, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user2@example.com",
@@ -760,17 +810,69 @@ namespace AI_Agent_WebApp.Migrations
                     b.HasBaseType("AI_Agent_WebApp.Models.Entities.User");
 
                     b.Property<string>("CompanyName")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<string>("CompanyWebsite")
-                        .IsRequired()
                         .HasColumnType("nvarchar(max)");
 
                     b.Property<bool>("Status")
                         .HasColumnType("bit");
 
                     b.HasDiscriminator().HasValue("Supplier");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 2,
+                            CreatedAt = new DateTime(2024, 1, 2, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "supplier1@example.com",
+                            FullName = "Supplier One",
+                            PasswordHash = "supplier1hash",
+                            Role = "Supplier",
+                            Username = "supplier1",
+                            CompanyName = "Company One",
+                            CompanyWebsite = "https://company1.com",
+                            Status = true
+                        },
+                        new
+                        {
+                            Id = 3,
+                            CreatedAt = new DateTime(2024, 1, 3, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "supplier2@example.com",
+                            FullName = "Supplier Two",
+                            PasswordHash = "supplier2hash",
+                            Role = "Supplier",
+                            Username = "supplier2",
+                            CompanyName = "Company Two",
+                            CompanyWebsite = "https://company2.com",
+                            Status = true
+                        },
+                        new
+                        {
+                            Id = 4,
+                            CreatedAt = new DateTime(2024, 1, 4, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "supplier3@example.com",
+                            FullName = "Supplier Three",
+                            PasswordHash = "supplier3hash",
+                            Role = "Supplier",
+                            Username = "supplier3",
+                            CompanyName = "Company Three",
+                            CompanyWebsite = "https://company3.com",
+                            Status = true
+                        },
+                        new
+                        {
+                            Id = 5,
+                            CreatedAt = new DateTime(2024, 1, 5, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "supplier4@example.com",
+                            FullName = "Supplier Four",
+                            PasswordHash = "supplier4hash",
+                            Role = "Supplier",
+                            Username = "supplier4",
+                            CompanyName = "Company Four",
+                            CompanyWebsite = "https://company4.com",
+                            Status = true
+                        });
                 });
 
             modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Agent", b =>
@@ -819,6 +921,25 @@ namespace AI_Agent_WebApp.Migrations
                     b.Navigation("User");
                 });
 
+            modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Follow", b =>
+                {
+                    b.HasOne("AI_Agent_WebApp.Models.Entities.Agent", "Agent")
+                        .WithMany("Follows")
+                        .HasForeignKey("AgentId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.HasOne("AI_Agent_WebApp.Models.Entities.User", "User")
+                        .WithMany()
+                        .HasForeignKey("UserId")
+                        .OnDelete(DeleteBehavior.Cascade)
+                        .IsRequired();
+
+                    b.Navigation("Agent");
+
+                    b.Navigation("User");
+                });
+
             modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Review", b =>
                 {
                     b.HasOne("AI_Agent_WebApp.Models.Entities.Agent", "Agent")
@@ -847,6 +968,11 @@ namespace AI_Agent_WebApp.Migrations
                         .IsRequired();
 
                     b.Navigation("User");
+                });
+
+            modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Agent", b =>
+                {
+                    b.Navigation("Follows");
                 });
 #pragma warning restore 612, 618
         }

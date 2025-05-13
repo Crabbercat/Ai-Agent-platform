@@ -1,14 +1,23 @@
 @model IEnumerable<AI_Agent_WebApp.Models.Entities.Agent>
+@using Microsoft.AspNetCore.Http
+@using System.Security.Claims
+@inject IHttpContextAccessor HttpContextAccessor
 @{
-    ViewData["Title"] = "Agent của tôi";
+    ViewData["Title"] = "Quản lý AI-Agent (Supplier)";
+    var user = HttpContextAccessor.HttpContext?.User;
+    var isSupplier = user?.IsInRole("Supplier") ?? false;
 }
-<h2>Agent của tôi</h2>
-<table class="table">
-    <thead>
+<h2>Quản lý AI-Agent của bạn</h2>
+<a class="btn btn-success mb-3" asp-action="Create">Thêm AI-Agent mới</a>
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
         <tr>
             <th>Tên</th>
+            <th>Nhà cung cấp</th>
+            <th>Danh mục</th>
             <th>Trạng thái</th>
-            <th></th>
+            <th>Ngày tạo</th>
+            <th>Hành động</th>
         </tr>
     </thead>
     <tbody>
@@ -16,10 +25,14 @@
         {
             <tr>
                 <td>@agent.Name</td>
-                <td>@(agent.IsActive ? "Hoạt động" : "Bị khóa")</td>
+                <td>@agent.Supplier?.FullName</td>
+                <td>@agent.Category?.Name</td>
+                <td><span class="badge @(agent.IsActive ? "bg-success" : "bg-secondary")">@(agent.IsActive ? "Hoạt động" : "Bị khóa")</span></td>
+                <td>@agent.CreatedAt.ToString("dd/MM/yyyy")</td>
                 <td>
-                    <a asp-action="Edit" asp-route-id="@agent.Id">Sửa</a> |
-                    <a asp-action="Delete" asp-route-id="@agent.Id">Xóa</a>
+                    <a class="btn btn-primary btn-sm" asp-action="Edit" asp-route-id="@agent.Id">Sửa</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@agent.Id" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@agent.Id">Chi tiết</a>
                 </td>
             </tr>
         }

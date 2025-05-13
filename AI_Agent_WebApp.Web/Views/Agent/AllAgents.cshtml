@@ -1,0 +1,38 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Agent>
+@{
+    ViewData["Title"] = "Tất cả AI-Agent (Staff)";
+}
+<h2>Quản lý tất cả AI-Agent trong hệ thống</h2>
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Tên</th>
+            <th>Nhà cung cấp</th>
+            <th>Danh mục</th>
+            <th>Trạng thái</th>
+            <th>Ngày tạo</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var agent in Model)
+        {
+            <tr>
+                <td>@agent.Name</td>
+                <td>@agent.Supplier?.FullName</td>
+                <td>@agent.Category?.Name</td>
+                <td>
+                    <form asp-action="ToggleStatus" asp-route-id="@agent.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-sm @(agent.IsActive ? "btn-success" : "btn-secondary")">
+                            @(agent.IsActive ? "Active" : "Inactive")
+                        </button>
+                    </form>
+                </td>
+                <td>@agent.CreatedAt.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@agent.Id">Chi tiết</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

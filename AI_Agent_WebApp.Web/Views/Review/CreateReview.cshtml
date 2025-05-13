@@ -1,17 +1,81 @@
 @model AI_Agent_WebApp.Models.Entities.Review
+@using Microsoft.AspNetCore.Http
+@inject IHttpContextAccessor HttpContextAccessor
 @{
     ViewData["Title"] = "Viết đánh giá mới";
+    var isAuthenticated = HttpContextAccessor.HttpContext?.User?.Identity?.IsAuthenticated ?? false;
 }
 <h2>Viết đánh giá cho Agent</h2>
-<form asp-action="Post">
-    <input type="hidden" asp-for="AgentId" />
-    <div class="form-group">
-        <label asp-for="Content"></label>
-        <textarea asp-for="Content" class="form-control"></textarea>
-    </div>
-    <div class="form-group">
-        <label asp-for="Rating"></label>
-        <input asp-for="Rating" class="form-control" type="number" min="1" max="5" />
-    </div>
-    <button type="submit" class="btn btn-primary">Gửi đánh giá</button>
-</form>
+@if (TempData["ReviewSuccess"] != null)
+{
+    <div class="alert alert-success mt-2">@TempData["ReviewSuccess"]</div>
+}
+@if (!isAuthenticated)
+{
+    <div class="alert alert-warning mb-3">Bạn cần <a href="@Url.Action("Login", "Auth")">đăng nhập</a> để viết đánh giá.</div>
+    <button type="button" class="btn btn-primary" onclick="window.location.href='@Url.Action("Login", "Auth")'">Đăng nhập để đánh giá</button>
+}
+else
+{
+    <form asp-action="Post" asp-controller="Review" method="post" style="max-width: 500px;">
+        <input type="hidden" asp-for="AgentId" />
+        <div class="form-group mb-3">
+            <label asp-for="Content" class="form-label">Nội dung đánh giá</label>
+            <textarea asp-for="Content" class="form-control" rows="3" placeholder="Chia sẻ trải nghiệm của bạn..."></textarea>
+        </div>
+        <div class="form-group mb-3">
+            <label class="form-label">Đánh giá</label>
+            <div id="starRating" class="mb-2">
+                @for (int i = 1; i <= 5; i++)
+                {
+                    <span class="star" data-value="@i" style="font-size: 2rem; cursor: pointer; color: #ccc;">&#9733;</span>
+                }
+            </div>
+            <input type="hidden" asp-for="Rating" id="Rating" />
+            <span id="ratingValue" class="text-muted"></span>
+        </div>
+        <button type="submit" class="btn btn-primary">Gửi đánh giá</button>
+    </form>
+}
+<script>
+    // Star rating logic
+    const stars = document.querySelectorAll('#starRating .star');
+    const ratingInput = document.getElementById('Rating');
+    const ratingValue = document.getElementById('ratingValue');
+    let selectedRating = 0;
+    stars.forEach(star => {
+        star.addEventListener('mouseover', function () {
+            highlightStars(this.dataset.value);
+        });
+        star.addEventListener('mouseout', function () {
+            highlightStars(selectedRating);
+        });
+        star.addEventListener('click', function () {
+            selectedRating = this.dataset.value;
+            ratingInput.value = selectedRating;
+            highlightStars(selectedRating);
+            ratingValue.textContent = `Bạn đã chọn ${selectedRating} sao`;
+        });
+    });
+    function highlightStars(rating) {
+        stars.forEach(star => {
+            if (star.dataset.value <= rating) {
+                star.style.color = '#FFD700';
+            } else {
+                star.style.color = '#ccc';
+            }
+        });
+    }
+</script>
+<style>
+    #starRating .star {
+        transition: color 0.2s;
+        margin-right: 4px;
+    }
+    #starRating .star:last-child {
+        margin-right: 0;
+    }
+    form textarea.form-control {
+        resize: vertical;
+    }
+</style>

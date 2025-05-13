@@ -20,5 +20,8 @@ namespace AI_Agent_WebApp.Models.Entities
         public string? ImagePath { get; set; }
         [NotMapped]
         public IFormFile? ImageFile { get; set; }
+        public string? Url { get; set; } // Link website của AI (nullable)
+        public ICollection<Follow>? Follows { get; set; } // Navigation property để đếm số follow
+        public ICollection<Article>? Articles { get; set; } // Navigation property for articles
     }
 }

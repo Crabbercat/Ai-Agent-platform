@@ -3,9 +3,33 @@
     ViewData["Title"] = "Các Agent đã theo dõi";
 }
 <h2>Agent bạn đang theo dõi</h2>
-<ul>
-@foreach (var agent in Model)
-{
-    <li>@agent.Name</li>
-}
-</ul>
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Tên</th>
+            <th>Nhà cung cấp</th>
+            <th>Danh mục</th>
+            <th>Trạng thái</th>
+            <th>Ngày tạo</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var agent in Model)
+        {
+            <tr>
+                <td>@agent.Name</td>
+                <td>@agent.Supplier?.FullName</td>
+                <td>@agent.Category?.Name</td>
+                <td><span class="badge @(agent.IsActive ? "bg-success" : "bg-secondary")">@(agent.IsActive ? "Hoạt động" : "Bị khóa")</span></td>
+                <td>@agent.CreatedAt.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <form asp-action="Unfollow" asp-route-id="@agent.Id" method="post" style="display:inline;">
+                        <button type="submit" class="btn btn-danger btn-sm">Bỏ theo dõi</button>
+                    </form>
+                    <a class="btn btn-info btn-sm" asp-action="Details" asp-route-id="@agent.Id">Chi tiết</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

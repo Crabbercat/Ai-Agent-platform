@@ -9,5 +9,7 @@ namespace AI_Agent_WebApp.Repositories.Interfaces
         void Update(Models.Entities.Agent agent);
         void Delete(int id);
         void ToggleStatus(int id);
+        int GetReviewCountForAgent(int agentId);
+        int GetFollowerCountForAgent(int agentId);
     }
 }

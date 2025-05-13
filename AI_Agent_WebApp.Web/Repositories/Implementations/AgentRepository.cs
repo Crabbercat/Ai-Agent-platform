@@ -16,11 +16,13 @@ namespace AI_Agent_WebApp.Repositories.Implementations
             .Include(a => a.Supplier)
             .Include(a => a.Category)
             .Include(a => a.PaymentType)
+            .Include(a => a.Follows)
             .ToList();
         public Agent GetById(int id) => _context.Agents
             .Include(a => a.Supplier)
             .Include(a => a.Category)
             .Include(a => a.PaymentType)
+            .Include(a => a.Follows)
             .FirstOrDefault(a => a.Id == id)!;
         public void Insert(Agent agent)
         {
@@ -49,6 +51,14 @@ namespace AI_Agent_WebApp.Repositories.Implementations
                 agent.IsActive = !agent.IsActive;
                 _context.SaveChanges();
             }
+        }
+        public int GetReviewCountForAgent(int agentId)
+        {
+            return _context.Reviews.Count(r => r.AgentId == agentId);
+        }
+        public int GetFollowerCountForAgent(int agentId)
+        {
+            return _context.Follows.Count(f => f.AgentId == agentId);
         }
     }
 }

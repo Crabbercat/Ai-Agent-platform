@@ -1,0 +1,41 @@
+@model AI_Agent_WebApp.Models.ViewModels.RegisterViewModel
+@{
+    ViewData["Title"] = "Đăng ký";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-5" style="max-width: 500px;">
+    <h2 class="mb-4 text-center">Đăng ký tài khoản</h2>
+    <form asp-action="Register" method="post">
+        <div class="form-group mb-3">
+            <label asp-for="Username"></label>
+            <input asp-for="Username" class="form-control" />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Email"></label>
+            <input asp-for="Email" class="form-control" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="FullName"></label>
+            <input asp-for="FullName" class="form-control" />
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+        <div class="form-group mb-3">
+            <label asp-for="Password"></label>
+            <input asp-for="Password" type="password" class="form-control" />
+            <span asp-validation-for="Password" class="text-danger"></span>
+        </div>
+        <button type="submit" class="btn btn-success w-100">Đăng ký</button>
+        <div class="mt-3 text-center">
+            <span>Đã có tài khoản? </span>
+            <a href="@Url.Action("Login", "Auth")"> Đăng nhập</a>
+            <br />
+            <span>Bạn muốn trở thành nhà cung cấp? </span>
+            <a href="@Url.Action("RegisterSupplier", "Auth")">Đăng ký nhà cung cấp</a>
+        </div>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

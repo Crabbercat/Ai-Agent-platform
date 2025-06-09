@@ -20,6 +20,17 @@ namespace AI_Agent_WebApp.Data
 
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
+            // Ensure TPH inheritance uses the same table name for User, Supplier, Staff
+            modelBuilder.Entity<User>().ToTable("Users");
+            modelBuilder.Entity<Supplier>().ToTable("Users");
+            modelBuilder.Entity<Staff>().ToTable("Users");
+            // Thêm cấu hình Discriminator rõ ràng cho TPH
+            modelBuilder.Entity<User>()
+                .HasDiscriminator<string>("Role")
+                .HasValue<User>("User")
+                .HasValue<Staff>("Staff")
+                .HasValue<Supplier>("Supplier");
+
             // Thiết lập các khóa chính
             modelBuilder.Entity<Agent>().HasKey(a => a.Id);
             modelBuilder.Entity<Category>().HasKey(c => c.Id);
@@ -27,7 +38,7 @@ namespace AI_Agent_WebApp.Data
             modelBuilder.Entity<User>().HasKey(u => u.Id);
             modelBuilder.Entity<Article>().HasKey(a => a.Id);
             modelBuilder.Entity<Review>().HasKey(r => r.Id);
-            modelBuilder.Entity<SystemLog>().HasKey(s => s.Id);
+            modelBuilder.Entity<SystemLog>().HasKey(s => s.Id); // Khóa chính cho SystemLog
 
             // Thiết lập các khóa ngoại
             modelBuilder.Entity<Agent>()
@@ -176,6 +187,13 @@ namespace AI_Agent_WebApp.Data
             modelBuilder.Entity<SystemLog>().Property(s => s.Id).ValueGeneratedOnAdd();
 
             // Cấu hình quan hệ, ràng buộc, seed data nếu cần
+
+            // Seed data cho bảng Staff (TPH)
+            // Staff is a derived type of User, so do NOT call modelBuilder.Entity<Staff>().HasKey(...)
+            modelBuilder.Entity<Staff>().HasData(
+                new Staff { Id = 9, Username = "staff1", Email = "staff1@example.com", PasswordHash = "t1LjYdBE5mbAc9+uCnVYqyD5cyhhF2wNnNZO8F47FRU=", FullName = "Staff One", Role = "Staff", CreatedAt = new DateTime(2024, 1, 9, 8, 0, 0), Status = true },
+                new Staff { Id = 10, Username = "staff2", Email = "staff2@example.com", PasswordHash = "47eTMSsDhQNpFzuaBs/AJaEYcYjv+ee2Nj1nQdMMlWw=", FullName = "Staff Two", Role = "Staff", CreatedAt = new DateTime(2024, 1, 10, 8, 0, 0), Status = true }
+            );
         }
     }
 }

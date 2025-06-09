@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace AI_Agent_WebApp.Migrations
 {
     [DbContext(typeof(ApplicationDbContext))]
-    [Migration("20250511165523_InitialCreate")]
-    partial class InitialCreate
+    [Migration("20250519122209_deletestafftable_stupid")]
+    partial class deletestafftable_stupid
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -730,11 +730,6 @@ namespace AI_Agent_WebApp.Migrations
                     b.Property<DateTime>("CreatedAt")
                         .HasColumnType("datetime2");
 
-                    b.Property<string>("Discriminator")
-                        .IsRequired()
-                        .HasMaxLength(8)
-                        .HasColumnType("nvarchar(8)");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("nvarchar(max)");
@@ -748,7 +743,11 @@ namespace AI_Agent_WebApp.Migrations
 
                     b.Property<string>("Role")
                         .IsRequired()
-                        .HasColumnType("nvarchar(max)");
+                        .HasMaxLength(8)
+                        .HasColumnType("nvarchar(8)");
+
+                    b.Property<bool>("Status")
+                        .HasColumnType("bit");
 
                     b.Property<string>("Username")
                         .IsRequired()
@@ -756,9 +755,9 @@ namespace AI_Agent_WebApp.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("Users");
+                    b.ToTable("Users", (string)null);
 
-                    b.HasDiscriminator().HasValue("User");
+                    b.HasDiscriminator<string>("Role").HasValue("User");
 
                     b.UseTphMappingStrategy();
 
@@ -769,8 +768,9 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 1, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "admin@example.com",
                             FullName = "Admin User",
-                            PasswordHash = "adminhash",
+                            PasswordHash = "qFKPx1EdqaW8uflt2o9huztsTOmY5fcLE9wBelG4Fcg=",
                             Role = "Admin",
+                            Status = false,
                             Username = "admin"
                         },
                         new
@@ -779,8 +779,9 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 6, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user2@example.com",
                             FullName = "User Two",
-                            PasswordHash = "user2hash",
+                            PasswordHash = "ZpZ6gWC+giTdOzmzQ4vJRddTlvD3k3sqeSiyiZozL/o=",
                             Role = "User",
+                            Status = false,
                             Username = "user2"
                         },
                         new
@@ -789,8 +790,9 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 7, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user3@example.com",
                             FullName = "User Three",
-                            PasswordHash = "user3hash",
+                            PasswordHash = "IeSjCJoNCNTeKAX3OteyKtCo0WOX3CGYzJPXexT3CuI=",
                             Role = "User",
+                            Status = false,
                             Username = "user3"
                         },
                         new
@@ -799,9 +801,43 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 8, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "user4@example.com",
                             FullName = "User Four",
-                            PasswordHash = "user4hash",
+                            PasswordHash = "hVv//jP13T++DQVC2Q00IrChsc0OqsldMG9fQ1S0BlE=",
                             Role = "User",
+                            Status = false,
                             Username = "user4"
+                        });
+                });
+
+            modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Staff", b =>
+                {
+                    b.HasBaseType("AI_Agent_WebApp.Models.Entities.User");
+
+                    b.ToTable("Users", (string)null);
+
+                    b.HasDiscriminator().HasValue("Staff");
+
+                    b.HasData(
+                        new
+                        {
+                            Id = 9,
+                            CreatedAt = new DateTime(2024, 1, 9, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "staff1@example.com",
+                            FullName = "Staff One",
+                            PasswordHash = "t1LjYdBE5mbAc9+uCnVYqyD5cyhhF2wNnNZO8F47FRU=",
+                            Role = "Staff",
+                            Status = true,
+                            Username = "staff1"
+                        },
+                        new
+                        {
+                            Id = 10,
+                            CreatedAt = new DateTime(2024, 1, 10, 8, 0, 0, 0, DateTimeKind.Unspecified),
+                            Email = "staff2@example.com",
+                            FullName = "Staff Two",
+                            PasswordHash = "47eTMSsDhQNpFzuaBs/AJaEYcYjv+ee2Nj1nQdMMlWw=",
+                            Role = "Staff",
+                            Status = true,
+                            Username = "staff2"
                         });
                 });
 
@@ -815,8 +851,7 @@ namespace AI_Agent_WebApp.Migrations
                     b.Property<string>("CompanyWebsite")
                         .HasColumnType("nvarchar(max)");
 
-                    b.Property<bool>("Status")
-                        .HasColumnType("bit");
+                    b.ToTable("Users", (string)null);
 
                     b.HasDiscriminator().HasValue("Supplier");
 
@@ -827,12 +862,12 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 2, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "supplier1@example.com",
                             FullName = "Supplier One",
-                            PasswordHash = "supplier1hash",
+                            PasswordHash = "t1LjYdBE5mbAc9+uCnVYqyD5cyhhF2wNnNZO8F47FRU=",
                             Role = "Supplier",
+                            Status = true,
                             Username = "supplier1",
                             CompanyName = "Company One",
-                            CompanyWebsite = "https://company1.com",
-                            Status = true
+                            CompanyWebsite = "https://company1.com"
                         },
                         new
                         {
@@ -840,12 +875,12 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 3, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "supplier2@example.com",
                             FullName = "Supplier Two",
-                            PasswordHash = "supplier2hash",
+                            PasswordHash = "47eTMSsDhQNpFzuaBs/AJaEYcYjv+ee2Nj1nQdMMlWw=",
                             Role = "Supplier",
+                            Status = true,
                             Username = "supplier2",
                             CompanyName = "Company Two",
-                            CompanyWebsite = "https://company2.com",
-                            Status = true
+                            CompanyWebsite = "https://company2.com"
                         },
                         new
                         {
@@ -853,12 +888,12 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 4, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "supplier3@example.com",
                             FullName = "Supplier Three",
-                            PasswordHash = "supplier3hash",
+                            PasswordHash = "t+jvGkgp5HtK6hpmOGlqNfcw+HRH6tqzj4BOwfyNe1A=",
                             Role = "Supplier",
+                            Status = true,
                             Username = "supplier3",
                             CompanyName = "Company Three",
-                            CompanyWebsite = "https://company3.com",
-                            Status = true
+                            CompanyWebsite = "https://company3.com"
                         },
                         new
                         {
@@ -866,12 +901,12 @@ namespace AI_Agent_WebApp.Migrations
                             CreatedAt = new DateTime(2024, 1, 5, 8, 0, 0, 0, DateTimeKind.Unspecified),
                             Email = "supplier4@example.com",
                             FullName = "Supplier Four",
-                            PasswordHash = "supplier4hash",
+                            PasswordHash = "kbgmF2vN3GX4Zo/wf81beHvIY2g3Negbhcy5s/zpU2U=",
                             Role = "Supplier",
+                            Status = true,
                             Username = "supplier4",
                             CompanyName = "Company Four",
-                            CompanyWebsite = "https://company4.com",
-                            Status = true
+                            CompanyWebsite = "https://company4.com"
                         });
                 });
 
@@ -905,7 +940,7 @@ namespace AI_Agent_WebApp.Migrations
             modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Article", b =>
                 {
                     b.HasOne("AI_Agent_WebApp.Models.Entities.Agent", "Agent")
-                        .WithMany()
+                        .WithMany("Articles")
                         .HasForeignKey("AgentId")
                         .OnDelete(DeleteBehavior.Restrict)
                         .IsRequired();
@@ -972,6 +1007,8 @@ namespace AI_Agent_WebApp.Migrations
 
             modelBuilder.Entity("AI_Agent_WebApp.Models.Entities.Agent", b =>
                 {
+                    b.Navigation("Articles");
+
                     b.Navigation("Follows");
                 });
 #pragma warning restore 612, 618

@@ -1,11 +1,11 @@
-@model AI_Agent_WebApp.Models.Entities.Agent
+@model AI_Agent_WebApp.Models.ViewModels.AgentViewModel
 @{
     ViewData["Title"] = "Chỉnh sửa AI-Agent";
     var categories = ViewBag.Categories as List<AI_Agent_WebApp.Models.Entities.Category>;
     var paymentTypes = ViewBag.PaymentTypes as List<AI_Agent_WebApp.Models.Entities.PaymentType>;
 }
 <h2>Chỉnh sửa AI-Agent</h2>
-<form asp-action="Edit" enctype="multipart/form-data">
+<form asp-action="Edit" enctype="multipart/form-data" method="post">
     <input type="hidden" asp-for="Id" />
     <div class="form-group mb-2">
         <label asp-for="Name"></label>
@@ -14,6 +14,7 @@
     <div class="form-group mb-2">
         <label asp-for="Description"></label>
         <textarea asp-for="Description" class="form-control"></textarea>
+        <span asp-validation-for="Description" class="text-danger"></span>
     </div>
     <div class="form-group mb-2">
         <label asp-for="CategoryId">Danh mục</label>
@@ -28,19 +29,11 @@
         <input asp-for="Url" class="form-control" />
     </div>
     <div class="form-group mb-3">
-        <label>Ảnh đại diện hiện tại</label><br />
-        @if (!string.IsNullOrEmpty(Model.ImagePath))
-        {
-            var imagePath = Model.ImagePath.StartsWith("wwwroot/") ? Model.ImagePath.Substring(7) : Model.ImagePath;
-            <img src="/@imagePath" alt="Agent Image" style="max-width:120px; border-radius:12px;" />
-        }
-        else
-        {
-            <span class="text-muted">Chưa có ảnh</span>
-        }
+        <label>Ảnh hiện tại:</label><br />
+        <img src="@(string.IsNullOrEmpty(Model.ImagePath) ? "/images/default-agent.png" : Model.ImagePath)" alt="Agent Image" width="120" style="border-radius:10px;" />
     </div>
     <div class="form-group mb-3">
-        <label asp-for="ImageFile">Thay ảnh đại diện mới (nếu muốn)</label>
+        <label asp-for="ImageFile">Đổi ảnh đại diện</label>
         <input asp-for="ImageFile" type="file" class="form-control" accept="image/*" />
     </div>
     <button type="submit" class="btn btn-primary">Lưu thay đổi</button>

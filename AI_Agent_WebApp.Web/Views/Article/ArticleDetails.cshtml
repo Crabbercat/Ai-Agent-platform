@@ -2,7 +2,22 @@
 @{
     ViewData["Title"] = "Chi tiết bài viết";
 }
-<h2>@Model.Title</h2>
-<p>@Model.Content</p>
-<p><strong>Tác giả:</strong> @Model.User?.FullName</p>
-<p><strong>Ngày tạo:</strong> @Model.CreatedAt.ToShortDateString()</p>
+<div class="container mt-4" style="max-width: 700px; background: #fff; border-radius: 16px; box-shadow: 0 2px 12px #e6e6e6; padding: 32px 32px 24px 32px;">
+    <div class="d-flex align-items-center mb-4">
+        <img src="@((Model.Agent?.ImagePath != null && Model.Agent.ImagePath != "") ? Url.Content(Model.Agent.ImagePath) : Url.Content("~/images/default-agent.png"))" alt="Agent Logo" style="width: 56px; height: 56px; border-radius: 12px; object-fit: cover; box-shadow: 0 2px 8px #e6e6e6;">
+        <div class="ms-3">
+            <div class="fw-bold" style="font-size: 1.2rem;">@Model.Agent?.Name</div>
+            <div class="text-muted small">Lượt theo dõi: <strong>@(Model.Agent != null && Model.Agent.Follows != null ? Model.Agent.Follows.Count : 0)</strong></div>
+        </div>
+    </div>
+    <h2 class="fw-bold mb-3" style="font-size: 2rem;">@Model.Title</h2>
+    <div class="mb-3 text-muted" style="font-size: 0.95rem;">
+        <span><i class="bi bi-person"></i> @Model.User?.FullName</span>
+        <span class="mx-2">|</span>
+        <span><i class="bi bi-calendar"></i> @Model.CreatedAt.ToString("dd/MM/yyyy")</span>
+    </div>
+    <div class="mb-4" style="font-size: 1.1rem; line-height: 1.7;">
+        @Model.Content
+    </div>
+    <a class="btn btn-outline-primary" asp-controller="Agent" asp-action="Details" asp-route-id="@Model.AgentId">Quay lại AI-Agent</a>
+</div>

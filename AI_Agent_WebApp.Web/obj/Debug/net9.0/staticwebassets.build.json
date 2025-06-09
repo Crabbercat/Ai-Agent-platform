@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "aLxt2WiIDmFsA4gN4z854xKDbsqs1pABP7zVoex78wY=",
+  "Hash": "1PzYJLP88tp7/CjKDYHZV/72s6mFyxM0vu6ELlK3gGo=",
   "Source": "AI_Agent_WebApp",
   "BasePath": "_content/AI_Agent_WebApp",
   "Mode": "Default",
@@ -3165,6 +3165,69 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\lib\\jquery\\LICENSE.txt"
+    },
+    {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832416886559629.jpg",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "uploads/agents/agent_638832416886559629#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pldl3jjc0b",
+      "Integrity": "HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\agents\\agent_638832416886559629.jpg"
+    },
+    {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832799111025483.jpg",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "uploads/agents/agent_638832799111025483#[.{fingerprint}]?.jpg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "pldl3jjc0b",
+      "Integrity": "HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\agents\\agent_638832799111025483.jpg"
+    },
+    {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638837656612774624.jpeg",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "uploads/agents/agent_638837656612774624#[.{fingerprint}]?.jpeg",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "qxvq84d4ox",
+      "Integrity": "Loyz9yBemTAINDLzq4iRf5KtwOTb+e4b6UKz9vkS7ts=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\uploads\\agents\\agent_638837656612774624.jpeg"
     }
   ],
   "Endpoints": [
@@ -24175,6 +24238,252 @@
         {
           "Name": "integrity",
           "Value": "sha256-wRqs30CSrwWDvG1bDMUjomAlSqRRTMplLSuLcrgYtHw="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/agents/agent_638832416886559629.jpg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832416886559629.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 01:54:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/agents/agent_638832416886559629.pldl3jjc0b.jpg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832416886559629.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 01:54:48 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pldl3jjc0b"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/agents/agent_638832416886559629.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/agents/agent_638832799111025483.jpg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832799111025483.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 12:31:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/agents/agent_638832799111025483.pldl3jjc0b.jpg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832799111025483.jpg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "325115"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 19 May 2025 12:31:51 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "pldl3jjc0b"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/agents/agent_638832799111025483.jpg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-HXebGv8AYA8LtGGO8x9eRNaLUOVDiQAAG3wNMqR/QsY="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/agents/agent_638837656612774624.jpeg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638837656612774624.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Loyz9yBemTAINDLzq4iRf5KtwOTb+e4b6UKz9vkS7ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 03:27:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-Loyz9yBemTAINDLzq4iRf5KtwOTb+e4b6UKz9vkS7ts="
+        }
+      ]
+    },
+    {
+      "Route": "uploads/agents/agent_638837656612774624.qxvq84d4ox.jpeg",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638837656612774624.jpeg",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "2159758"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/jpeg"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"Loyz9yBemTAINDLzq4iRf5KtwOTb+e4b6UKz9vkS7ts=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Sun, 25 May 2025 03:27:41 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "qxvq84d4ox"
+        },
+        {
+          "Name": "label",
+          "Value": "uploads/agents/agent_638837656612774624.jpeg"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-Loyz9yBemTAINDLzq4iRf5KtwOTb+e4b6UKz9vkS7ts="
         }
       ]
     }

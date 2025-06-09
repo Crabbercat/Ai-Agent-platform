@@ -1,0 +1,41 @@
+@model AI_Agent_WebApp.Models.Entities.Staff
+@{
+    ViewData["Title"] = "Create Staff";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-4">
+    <h2 class="mb-4">Create Staff Account</h2>
+    <form asp-action="CreateStaff" method="post" class="needs-validation" novalidate>
+        <div class="mb-3">
+            <label asp-for="FullName" class="form-label">Full Name</label>
+            <input asp-for="FullName" class="form-control" required />
+            <span asp-validation-for="FullName" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Email" class="form-label">Email</label>
+            <input asp-for="Email" class="form-control" required type="email" />
+            <span asp-validation-for="Email" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label asp-for="Username" class="form-label">Username</label>
+            <input asp-for="Username" class="form-control" required />
+            <span asp-validation-for="Username" class="text-danger"></span>
+        </div>
+        <div class="mb-3">
+            <label class="form-label">Password</label>
+            <input class="form-control" required type="password" name="Password" autocomplete="new-password" />
+            @{
+                var pwdState = ViewData.ModelState["Password"];
+                if (pwdState != null && pwdState.Errors.Count > 0)
+                {
+                    <span class="text-danger">@pwdState.Errors[0].ErrorMessage</span>
+                }
+            }
+        </div>
+        <button type="submit" class="btn btn-primary">Create</button>
+        <a href="@Url.Action("StaffList", "Admin")" class="btn btn-secondary ms-2">Cancel</a>
+    </form>
+</div>
+@section Scripts {
+    <partial name="_ValidationScriptsPartial" />
+}

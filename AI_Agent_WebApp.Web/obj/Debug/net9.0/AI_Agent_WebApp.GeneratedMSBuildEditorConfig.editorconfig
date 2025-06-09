@@ -28,6 +28,18 @@ build_property._RazorSourceGeneratorDebug =
 build_property.EffectiveAnalysisLevelStyle = 9.0
 build_property.EnableCodeStyleSeverity = 
 
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Admin/CreateStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cQ3JlYXRlU3RhZmYuY3NodG1s
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Admin/EditStaff.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cRWRpdFN0YWZmLmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Admin/StaffList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWRtaW5cU3RhZmZMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Agent/AgentDetails.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQWdlbnRcQWdlbnREZXRhaWxzLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
@@ -92,6 +104,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxSZWdpc3RlclN1cHBsaWVyLmNzaHRtbA==
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Auth/UpdatePassword.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcQXV0aFxVcGRhdGVQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Home/Index.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcSG9tZVxJbmRleC5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -124,6 +140,10 @@ build_metadata.AdditionalFiles.CssScope =
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3RhdGlzdGljcy5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Staff/SupplierList.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3RhZmZcU3VwcGxpZXJMaXN0LmNzaHRtbA==
+build_metadata.AdditionalFiles.CssScope = 
+
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/Supplier/RegisterSupplier.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcU3VwcGxpZXJcUmVnaXN0ZXJTdXBwbGllci5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
@@ -150,6 +170,10 @@ build_metadata.AdditionalFiles.CssScope =
 
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/User/UpdatePassword.cshtml]
 build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVcGRhdGVQYXNzd29yZC5jc2h0bWw=
+build_metadata.AdditionalFiles.CssScope = 
+
+[D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/User/UserProfile.cshtml]
+build_metadata.AdditionalFiles.TargetPath = Vmlld3NcVXNlclxVc2VyUHJvZmlsZS5jc2h0bWw=
 build_metadata.AdditionalFiles.CssScope = 
 
 [D:/OneDrive - The University of Technology/DOCUMENT/HK4/2.PBL3/Ai-Agent-platform/AI_Agent_WebApp.Web/Views/_ViewImports.cshtml]

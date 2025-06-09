@@ -1,0 +1,123 @@
+@model AI_Agent_WebApp.Models.Entities.User
+@{
+    ViewData["Title"] = "Profile";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+    var isSupplier = ViewBag.IsSupplier as bool? ?? (Model.Role == "Supplier");
+    var readOnly = ViewBag.ReadOnly as bool? ?? false;
+}
+<div class="container mt-4" style="max-width: 700px;">
+    <form id="userProfileForm" asp-action="EditProfile" asp-controller="User" method="post" autocomplete="off">
+        <div class="card shadow-sm mb-4">
+            <div class="card-body">
+                <h2 class="card-title mb-4">Profile</h2>
+                <dl class="row mb-0">
+                    <dt class="col-sm-4">Full Name</dt>
+                    <dd class="col-sm-8">
+                        <input class="form-control" name="FullName" id="UserFullName" value="@Model.FullName" @(readOnly ? "readonly" : "") />
+                    </dd>
+                    <dt class="col-sm-4">Email</dt>
+                    <dd class="col-sm-8">
+                        <input class="form-control" name="Email" id="UserEmail" value="@Model.Email" @(readOnly ? "readonly" : "") />
+                    </dd>
+                    <dt class="col-sm-4">Joined</dt>
+                    <dd class="col-sm-8">
+                        <input class="form-control" value="@Model.CreatedAt.ToString("dd/MM/yyyy")" readonly />
+                    </dd>
+                </dl>
+                @if (!readOnly)
+                {
+                    <div class="text-end mt-3">
+                        <button type="submit" class="btn btn-primary" id="saveUserProfileBtn" disabled>Save Changes</button>
+                    </div>
+                }
+            </div>
+        </div>
+    </form>
+    @if (isSupplier)
+    {
+        <form id="companyForm" asp-action="EditCompany" asp-controller="Supplier" method="post" autocomplete="off">
+            <div class="card shadow-sm mb-4">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Company Information</h4>
+                    <dl class="row mb-0">
+                        <dt class="col-sm-4">Company Name</dt>
+                        <dd class="col-sm-8">
+                            <input class="form-control" name="CompanyName" id="CompanyName" value="@(isSupplier ? ((AI_Agent_WebApp.Models.Entities.Supplier)Model).CompanyName : "")" @(readOnly ? "readonly" : "") />
+                        </dd>
+                        <dt class="col-sm-4">Company Email</dt>
+                        <dd class="col-sm-8">
+                            <input class="form-control" name="CompanyEmail" id="CompanyEmail" value="@(isSupplier ? ((AI_Agent_WebApp.Models.Entities.Supplier)Model).CompanyWebsite : "")" @(readOnly ? "readonly" : "") />
+                        </dd>
+                    </dl>
+                    @if (!readOnly)
+                    {
+                        <div class="text-end mt-3">
+                            <button type="submit" class="btn btn-primary" id="saveCompanyBtn" disabled>Save Company Info</button>
+                        </div>
+                    }
+                </div>
+            </div>
+        </form>
+    }
+    @if (!readOnly)
+    {
+        <form id="passwordForm" asp-action="ChangePassword" asp-controller="User" method="post" autocomplete="off">
+            <div class="card shadow-sm">
+                <div class="card-body">
+                    <h4 class="card-title mb-3">Change Password</h4>
+                    <div class="mb-3 row">
+                        <label for="CurrentPassword" class="col-sm-4 col-form-label">Current Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" name="CurrentPassword" id="CurrentPassword" required />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="NewPassword" class="col-sm-4 col-form-label">New Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" name="NewPassword" id="NewPassword" required />
+                        </div>
+                    </div>
+                    <div class="mb-3 row">
+                        <label for="ConfirmPassword" class="col-sm-4 col-form-label">Confirm New Password</label>
+                        <div class="col-sm-8">
+                            <input type="password" class="form-control" name="ConfirmPassword" id="ConfirmPassword" required />
+                        </div>
+                    </div>
+                    <div class="text-end">
+                        <button type="submit" class="btn btn-warning" id="changePasswordBtn">Change Password</button>
+                    </div>
+                </div>
+            </div>
+        </form>
+    }
+</div>
+<script>
+    // Store initial values for comparison
+    const initialUserProfile = {
+        FullName: '@Model.FullName',
+        Email: '@Model.Email',
+    };
+    function checkUserProfileChanged() {
+        const fullName = document.getElementById('UserFullName').value;
+        const email = document.getElementById('UserEmail').value;
+        const changed = fullName !== initialUserProfile.FullName || email !== initialUserProfile.Email;
+        document.getElementById('saveUserProfileBtn').disabled = !changed;
+    }
+    document.getElementById('UserFullName').addEventListener('input', checkUserProfileChanged);
+    document.getElementById('UserEmail').addEventListener('input', checkUserProfileChanged);
+    // Company info script (if supplier)
+    if (document.getElementById('CompanyName')) {
+        const initialCompany = {
+            CompanyName: '@(isSupplier ? ((AI_Agent_WebApp.Models.Entities.Supplier)Model).CompanyName : "")',
+            CompanyEmail: '@(isSupplier ? ((AI_Agent_WebApp.Models.Entities.Supplier)Model).CompanyWebsite : "")',
+        };
+        function checkCompanyChanged() {
+            const companyName = document.getElementById('CompanyName').value;
+            const companyEmail = document.getElementById('CompanyEmail').value;
+            const changed = companyName !== initialCompany.CompanyName || companyEmail !== initialCompany.CompanyEmail;
+            document.getElementById('saveCompanyBtn').disabled = !changed;
+        }
+        document.getElementById('CompanyName').addEventListener('input', checkCompanyChanged);
+        document.getElementById('CompanyEmail').addEventListener('input', checkCompanyChanged);
+    }
+</script>

@@ -337,6 +337,18 @@
       "PackagePath": "staticwebassets\\lib\\jquery\\dist\\jquery.slim.min.map"
     },
     {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832416886559629.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agents\\agent_638832416886559629.jpg"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638832799111025483.jpg",
+      "PackagePath": "staticwebassets\\uploads\\agents\\agent_638832799111025483.jpg"
+    },
+    {
+      "Id": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\uploads\\agents\\agent_638837656612774624.jpeg",
+      "PackagePath": "staticwebassets\\uploads\\agents\\agent_638837656612774624.jpeg"
+    },
+    {
       "Id": "obj\\Debug\\net9.0\\staticwebassets\\msbuild.AI_Agent_WebApp.Microsoft.AspNetCore.StaticWebAssetEndpoints.props",
       "PackagePath": "build\\Microsoft.AspNetCore.StaticWebAssetEndpoints.props"
     },

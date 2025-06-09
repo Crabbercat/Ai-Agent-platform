@@ -1,0 +1,46 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Supplier>
+@{
+    ViewData["Title"] = "Supplier Accounts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-4">
+    <h2 class="mb-4">Supplier Accounts</h2>
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Name</th>
+                <th>Company Name</th>
+                <th>Status</th>
+                <th style="width: 180px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var supplier in Model)
+            {
+                <tr>
+                    <td>@supplier.FullName</td>
+                    <td>@supplier.CompanyName</td>
+                    <td>
+                        @if (supplier.Status)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Unactive</span>
+                        }
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-info me-2" href="@Url.Action("SupplierProfile", "Staff", new { id = supplier.Id })">View Detail</a>
+                        <form method="post" asp-action="ToggleSupplierStatus" asp-controller="Staff" style="display:inline;">
+                            <input type="hidden" name="id" value="@supplier.Id" />
+                            <button type="submit" class="btn btn-sm @(supplier.Status ? "btn-danger" : "btn-success")">
+                                @(supplier.Status ? "Unactive" : "Activate")
+                            </button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

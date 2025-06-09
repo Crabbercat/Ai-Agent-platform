@@ -3,6 +3,7 @@ using AI_Agent_WebApp.Models.ViewModels;
 using AI_Agent_WebApp.Services.Interfaces;
 using AI_Agent_WebApp.Data;
 using Microsoft.AspNetCore.Mvc;
+using Microsoft.EntityFrameworkCore;
 
 namespace AI_Agent_WebApp.Controllers
 {
@@ -27,19 +28,28 @@ namespace AI_Agent_WebApp.Controllers
 
         public IActionResult Details(int id)
         {
-            var agent = _agentService.GetAgentById(id);
+            // Đảm bảo load Articles khi lấy agent
+            var agent = _context.Agents
+                .Include(a => a.Articles)
+                .FirstOrDefault(a => a.Id == id);
             if (agent == null)
                 return NotFound();
             var reviews = _reviewService.GetReviewsByAgent(id).ToList();
             // Kiểm tra user đã follow chưa
             bool isFollowed = false;
+            bool isOwner = false;
+            bool isSupplier = false;
             var user = HttpContext.User;
             if (user?.Identity != null && user.Identity.IsAuthenticated)
             {
-                var userIdClaim = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
-                if (userIdClaim != null && int.TryParse(userIdClaim.Value, out int userId))
+                var userIdClaim = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier)?.Value;
+                if (userIdClaim != null && int.TryParse(userIdClaim, out int userId))
                 {
                     isFollowed = _context.Follows.Any(f => f.UserId == userId && f.AgentId == id);
+                    // Kiểm tra có phải supplier sở hữu agent không
+                    var supplier = _context.Users.FirstOrDefault(s => s.Id == userId && s.Role == "Supplier");
+                    isSupplier = supplier != null;
+                    isOwner = supplier != null && supplier.Id == agent.SupplierId;
                 }
             }
             var vm = new AgentDetailViewModel
@@ -48,7 +58,9 @@ namespace AI_Agent_WebApp.Controllers
                 ReviewCount = _agentService.GetReviewCountForAgent(id),
                 FollowerCount = _agentService.GetFollowerCountForAgent(id),
                 Reviews = reviews,
-                IsFollowed = isFollowed
+                IsFollowed = isFollowed,
+                IsOwner = isOwner,
+                IsSupplier = isSupplier
             };
             return View("AgentDetails", vm);
         }
@@ -62,69 +74,104 @@ namespace AI_Agent_WebApp.Controllers
         }
 
         [HttpPost]
-        public IActionResult Create(Agent agent)
+        public async Task<IActionResult> Create(Models.ViewModels.AgentViewModel model)
         {
-            // Lấy SupplierId từ user đăng nhập
-            var user = HttpContext.User;
-            var idClaim = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
-            if (idClaim != null && int.TryParse(idClaim.Value, out int supplierId))
+            if (ModelState.IsValid)
             {
-                agent.SupplierId = supplierId;
-            }
-            agent.CreatedAt = DateTime.Now;
-            agent.IsActive = true;
-            // Xử lý upload ảnh
-            if (agent.ImageFile != null && agent.ImageFile.Length > 0)
-            {
-                var fileName = $"agent_{DateTime.Now:yyyyMMddHHmmssfff}_{Path.GetFileName(agent.ImageFile.FileName)}";
-                var savePath = Path.Combine("wwwroot/images/agents", fileName);
-                using (var stream = new FileStream(savePath, FileMode.Create))
+                var agent = new Agent
                 {
-                    agent.ImageFile.CopyTo(stream);
+                    Name = model.Name,
+                    Description = model.Description,
+                    CategoryId = model.CategoryId,
+                    PaymentTypeId = model.PaymentTypeId,
+                    Url = model.Url,
+                    CreatedAt = DateTime.Now,
+                    IsActive = true
+                };
+                // Lấy SupplierId từ user đăng nhập
+                var user = HttpContext.User;
+                var idClaim = user.FindFirst(System.Security.Claims.ClaimTypes.NameIdentifier);
+                if (idClaim != null && int.TryParse(idClaim.Value, out int supplierId))
+                {
+                    agent.SupplierId = supplierId;
                 }
-                agent.ImagePath = $"wwwroot/images/agents/{fileName}";
+                // Xử lý upload ảnh
+                if (model.ImageFile != null && model.ImageFile.Length > 0)
+                {
+                    var fileName = $"agent_{DateTime.Now.Ticks}{Path.GetExtension(model.ImageFile.FileName)}";
+                    var folderPath = Path.Combine("wwwroot", "uploads", "agents");
+                    Directory.CreateDirectory(folderPath);
+                    var fullPath = Path.Combine(folderPath, fileName);
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        await model.ImageFile.CopyToAsync(stream);
+                    }
+                    agent.ImagePath = $"/uploads/agents/{fileName}";
+                }
+                else
+                {
+                    agent.ImagePath = "/images/default-agent.png";
+                }
+                _context.Agents.Add(agent);
+                await _context.SaveChangesAsync();
+                return RedirectToAction("MyAgents");
             }
-            _agentService.CreateAgent(agent);
-            return RedirectToAction("MyAgents");
+            ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.PaymentTypes = _context.PaymentTypes.ToList();
+            return View(model);
         }
 
         public IActionResult Edit(int id)
         {
-            var agent = _agentService.GetAgentById(id);
+            var agent = _context.Agents.Find(id);
+            if (agent == null) return NotFound();
+            var model = new Models.ViewModels.AgentViewModel
+            {
+                Id = agent.Id,
+                Name = agent.Name,
+                Description = agent.Description,
+                CategoryId = agent.CategoryId,
+                PaymentTypeId = agent.PaymentTypeId,
+                Url = agent.Url,
+                ImagePath = agent.ImagePath
+            };
             ViewBag.Categories = _context.Categories.ToList();
             ViewBag.PaymentTypes = _context.PaymentTypes.ToList();
-            return View("EditAgent", agent);
+            return View("EditAgent", model);
         }
 
         [HttpPost]
-        public IActionResult Edit(Agent agent)
+        public async Task<IActionResult> Edit(Models.ViewModels.AgentViewModel model)
         {
-            // Giữ lại ảnh cũ nếu không upload mới
-            var oldAgent = _agentService.GetAgentById(agent.Id);
-            if (oldAgent == null)
+            if (ModelState.IsValid)
             {
-                TempData["ErrorMessage"] = "Agent không tồn tại.";
+                var agent = _context.Agents.Find(model.Id);
+                if (agent == null) return NotFound();
+                agent.Name = model.Name;
+                agent.Description = model.Description;
+                agent.CategoryId = model.CategoryId;
+                agent.PaymentTypeId = model.PaymentTypeId;
+                agent.Url = model.Url;
+                if (model.ImageFile != null && model.ImageFile.Length > 0)
+                {
+                    var fileName = $"agent_{DateTime.Now.Ticks}{Path.GetExtension(model.ImageFile.FileName)}";
+                    var folderPath = Path.Combine("wwwroot", "uploads", "agents");
+                    Directory.CreateDirectory(folderPath);
+                    var fullPath = Path.Combine(folderPath, fileName);
+                    using (var stream = new FileStream(fullPath, FileMode.Create))
+                    {
+                        await model.ImageFile.CopyToAsync(stream);
+                    }
+                    agent.ImagePath = $"/uploads/agents/{fileName}";
+                }
+                // Nếu không upload mới, giữ nguyên ảnh cũ
+                _context.Agents.Update(agent);
+                await _context.SaveChangesAsync();
                 return RedirectToAction("MyAgents");
             }
-            if (agent.ImageFile != null && agent.ImageFile.Length > 0)
-            {
-                var fileName = $"agent_{DateTime.Now:yyyyMMddHHmmssfff}_{Path.GetFileName(agent.ImageFile.FileName)}";
-                var savePath = Path.Combine("wwwroot/images/agents", fileName);
-                using (var stream = new FileStream(savePath, FileMode.Create))
-                {
-                    agent.ImageFile.CopyTo(stream);
-                }
-                agent.ImagePath = $"wwwroot/images/agents/{fileName}";
-            }
-            else
-            {
-                agent.ImagePath = oldAgent.ImagePath;
-            }
-            agent.SupplierId = oldAgent.SupplierId;
-            agent.CreatedAt = oldAgent.CreatedAt;
-            agent.IsActive = oldAgent.IsActive;
-            _agentService.UpdateAgent(agent);
-            return RedirectToAction("MyAgents");
+            ViewBag.Categories = _context.Categories.ToList();
+            ViewBag.PaymentTypes = _context.PaymentTypes.ToList();
+            return View(model);
         }
 
         public IActionResult Delete(int id)

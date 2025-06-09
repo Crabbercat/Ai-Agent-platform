@@ -26,7 +26,7 @@
             </a>
             <nav>
                 <a href="/" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Home</a>
-                <a href="/AgentMaps" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">AI Agent Maps</a>
+                <a href="/AgentMaps" style="color: #fff; text-decoration: none, margin: 0 12px; font-size: 16px;">AI Agent Maps</a>
                 <a href="/Categories" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Categories</a>
                 <a href="/Tags" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Tags</a>
                 <a href="/Blog" style="color: #fff; text-decoration: none; margin: 0 12px; font-size: 16px;">Blog</a>
@@ -48,24 +48,27 @@
                             @if (userRole == "User")
                             {
                                 <li><a class="dropdown-item" href="@Url.Action("MyFollowed", "Agent")">Followed Agents</a></li>
-                                <li><a class="dropdown-item" href="@Url.Action("Settings", "User")">User setting</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Settings", "User")">User Settings</a></li>
                             }
                             else if (userRole == "Supplier")
                             {
                                 <li><a class="dropdown-item" href="@Url.Action("MyAgents", "Agent")">My Agents</a></li>
-                                <li><a class="dropdown-item" href="@Url.Action("Settings", "Supplier")">User setting</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("MyFollowed", "Agent")">My Followed Agents</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("MyArticles", "Article")">My Articles</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Settings", "Supplier")">User Settings</a></li>
                             }
                             else if (userRole == "Staff")
                             {
                                 <li><a class="dropdown-item" href="@Url.Action("SystemControl", "Staff")">System Control</a></li>
-                                <li><a class="dropdown-item" href="@Url.Action("Settings", "Staff")">User setting</a></li>
-                                <li><a class="dropdown-item" href="@Url.Action("AgentManager", "Staff")">Agent manager</a></li>
-                                <li><a class="dropdown-item" href="@Url.Action("SupplierManager", "Staff")">Supplier manager</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("AgentManager", "Staff")">Agent Manager</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("SupplierManager", "Staff")">Supplier Manager</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("MyFollowed", "Agent")">My Followed Agents</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("Settings", "Staff")">User Settings</a></li>
                             }
                             else if (userRole == "Admin")
                             {
-                                <li><a class="dropdown-item" href="@Url.Action("StaffManager", "Admin")">Staff manager</a></li>
-                                <li><a class="dropdown-item" href="@Url.Action("SystemManager", "Admin")">System manager</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("StaffList", "Admin")">Staff Manager</a></li>
+                                <li><a class="dropdown-item" href="@Url.Action("SystemManager", "Admin")">System Manager</a></li>
                             }
                             <li><hr class="dropdown-divider" /></li>
                             <li><a class="dropdown-item" href="@Url.Action("Logout", "Auth")">Logout</a></li>

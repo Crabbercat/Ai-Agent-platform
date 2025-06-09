@@ -1,17 +1,29 @@
 @model AI_Agent_WebApp.Models.Entities.Article
 @{
     ViewData["Title"] = "Tạo bài viết mới";
+    var agents = ViewBag.Agents as List<AI_Agent_WebApp.Models.Entities.Agent>;
 }
 <h2>Tạo bài viết mới</h2>
-<form asp-action="Create">
-    <input type="hidden" asp-for="AgentId" />
-    <div class="form-group">
+<form asp-action="Create" method="post">
+    <div class="form-group mb-2">
+        <label asp-for="AgentId">Chọn AI-Agent</label>
+        <select asp-for="AgentId" class="form-control" asp-items="@(new SelectList(agents, "Id", "Name", Model.AgentId))">
+            <option value="">-- Chọn AI-Agent --</option>
+        </select>
+        <span asp-validation-for="AgentId" class="text-danger"></span>
+    </div>
+    <div class="form-group mb-2">
         <label asp-for="Title"></label>
         <input asp-for="Title" class="form-control" />
+        <span asp-validation-for="Title" class="text-danger"></span>
     </div>
-    <div class="form-group">
+    <div class="form-group mb-2">
         <label asp-for="Content"></label>
         <textarea asp-for="Content" class="form-control"></textarea>
+        <span asp-validation-for="Content" class="text-danger"></span>
     </div>
     <button type="submit" class="btn btn-primary">Tạo mới</button>
 </form>
+@section Scripts {
+    @{await Html.RenderPartialAsync("_ValidationScriptsPartial");}
+}

@@ -1,11 +1,48 @@
 @model IEnumerable<AI_Agent_WebApp.Models.Entities.Article>
 @{
     ViewData["Title"] = "Bài viết của tôi";
+    var agents = ViewBag.Agents as List<AI_Agent_WebApp.Models.Entities.Agent>;
+    int? selectedAgentId = ViewBag.SelectedAgentId as int?;
 }
 <h2>Bài viết của tôi</h2>
-<ul>
-@foreach (var article in Model)
-{
-    <li>@article.Title</li>
-}
-</ul>
+<form method="get" asp-action="MyArticles" class="mb-3 d-flex align-items-center gap-2">
+    <label for="agentId" class="me-2">Lọc theo AI-Agent:</label>
+    <select name="agentId" id="agentId" class="form-select" style="width: 220px;">
+        <option value="">Tất cả AI-Agent</option>
+        @if (agents != null)
+        {
+            foreach (var agent in agents)
+            {
+                var selected = selectedAgentId == agent.Id ? "selected" : null;
+                <option value="@agent.Id" selected="@selected">@agent.Name</option>
+            }
+        }
+    </select>
+    <button type="submit" class="btn btn-outline-primary">Lọc</button>
+    <a class="btn btn-success ms-auto" asp-action="Create">Tạo bài viết mới</a>
+</form>
+<table class="table table-bordered table-hover">
+    <thead class="table-dark">
+        <tr>
+            <th>Tiêu đề</th>
+            <th>AI-Agent</th>
+            <th>Ngày tạo</th>
+            <th>Hành động</th>
+        </tr>
+    </thead>
+    <tbody>
+        @foreach (var article in Model)
+        {
+            <tr>
+                <td>@article.Title</td>
+                <td>@article.Agent?.Name</td>
+                <td>@article.CreatedAt.ToString("dd/MM/yyyy")</td>
+                <td>
+                    <a class="btn btn-info btn-sm" asp-action="Edit" asp-route-id="@article.Id">Sửa</a>
+                    <a class="btn btn-danger btn-sm" asp-action="Delete" asp-route-id="@article.Id" onclick="return confirm('Bạn có chắc muốn xóa?');">Xóa</a>
+                    <a class="btn btn-primary btn-sm" asp-action="Details" asp-route-id="@article.Id">Xem</a>
+                </td>
+            </tr>
+        }
+    </tbody>
+</table>

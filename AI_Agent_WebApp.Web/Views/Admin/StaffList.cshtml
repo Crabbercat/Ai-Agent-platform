@@ -1,0 +1,56 @@
+@model IEnumerable<AI_Agent_WebApp.Models.Entities.Staff>
+@{
+    ViewData["Title"] = "Staff Accounts";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+<div class="container mt-4">
+    <h2 class="mb-4">Staff Accounts</h2>
+    @if (TempData["SuccessMessage"] != null)
+    {
+        <div class="alert alert-success">@TempData["SuccessMessage"]</div>
+    }
+    <a class="btn btn-primary mb-3" href="@Url.Action("CreateStaff", "Admin")">Create New Staff</a>
+    <table class="table table-bordered table-hover align-middle">
+        <thead class="table-light">
+            <tr>
+                <th>Name</th>
+                <th>Email</th>
+                <th>Status</th>
+                <th style="width: 180px;">Actions</th>
+            </tr>
+        </thead>
+        <tbody>
+            @foreach (var staff in Model)
+            {
+                <tr>
+                    <td>@staff.FullName</td>
+                    <td>@staff.Email</td>
+                    <td>
+                        @if (staff.Status)
+                        {
+                            <span class="badge bg-success">Active</span>
+                        }
+                        else
+                        {
+                            <span class="badge bg-danger">Unactive</span>
+                        }
+                    </td>
+                    <td>
+                        <a class="btn btn-sm btn-info me-2" href="@Url.Action("StaffProfile", "Admin", new { id = staff.Id })">View Detail</a>
+                        <a class="btn btn-sm btn-warning me-2" href="@Url.Action("EditStaff", "Admin", new { id = staff.Id })">Edit</a>
+                        <form method="post" asp-action="ToggleStaffStatus" asp-controller="Admin" style="display:inline;">
+                            <input type="hidden" name="id" value="@staff.Id" />
+                            <button type="submit" class="btn btn-sm @(staff.Status ? "btn-danger" : "btn-success")">
+                                @(staff.Status ? "Unactive" : "Activate")
+                            </button>
+                        </form>
+                        <form method="post" asp-action="DeleteStaff" asp-controller="Admin" style="display:inline;" onsubmit="return confirm('Are you sure you want to delete this staff account?');">
+                            <input type="hidden" name="id" value="@staff.Id" />
+                            <button type="submit" class="btn btn-sm btn-outline-danger ms-1">Delete</button>
+                        </form>
+                    </td>
+                </tr>
+            }
+        </tbody>
+    </table>
+</div>

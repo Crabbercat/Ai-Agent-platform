@@ -20,8 +20,8 @@
     <h1>AIDomain</h1>
     <p>Explore the right AI for every domain</p>
     <div class="search-box">
-        <input type="text" placeholder="Search AI tools, tags, or categories..." />
-        <button type="submit">Search</button>
+        <input type="text" id="homeSearchInput" placeholder="Search AI tools, tags, or categories..." />
+        <button type="button" id="homeSearchBtn">Search</button>
     </div>
 </div>
 <div class="content-container">
@@ -66,3 +66,17 @@
         <h2 class="section-title">Our Latest Blog Posts</h2>
     </div>
 </div>
+@section Scripts {
+    <script>
+        document.getElementById('homeSearchBtn').addEventListener('click', function() {
+            const searchTerm = document.getElementById('homeSearchInput').value.trim();
+            const url = `/Agent/Search?searchTerm=${encodeURIComponent(searchTerm)}&categoryId=&paymentTypeId=&page=1`;
+            window.location.href = url;
+        });
+        document.getElementById('homeSearchInput').addEventListener('keydown', function(e) {
+            if (e.key === 'Enter') {
+                document.getElementById('homeSearchBtn').click();
+            }
+        });
+    </script>
+}

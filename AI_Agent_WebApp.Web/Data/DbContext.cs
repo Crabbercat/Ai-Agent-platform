@@ -29,7 +29,8 @@ namespace AI_Agent_WebApp.Data
                 .HasDiscriminator<string>("Role")
                 .HasValue<User>("User")
                 .HasValue<Staff>("Staff")
-                .HasValue<Supplier>("Supplier");
+                .HasValue<Supplier>("Supplier")
+                .HasValue<Admin>("Admin");
 
             // Thiết lập các khóa chính
             modelBuilder.Entity<Agent>().HasKey(a => a.Id);

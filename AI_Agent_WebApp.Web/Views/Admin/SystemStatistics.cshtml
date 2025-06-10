@@ -1,0 +1,125 @@
+@using System.Text.Json;
+@model AI_Agent_WebApp.Models.ViewModels.SystemStatisticsViewModel
+@{
+    ViewData["Title"] = "Thống kê hệ thống";
+}
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+<div class="container mt-4" style="max-width: 950px; background: #fff; border-radius: 18px; box-shadow: 0 4px 24px #e6e6e6; padding: 40px 36px 32px 36px;">
+    <h2 class="fw-bold mb-4 text-center" style="letter-spacing:1px;">Thống kê hệ thống</h2>
+    <div class="row mb-4 g-4 justify-content-center">
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm stat-card h-100">
+                <div class="card-body">
+                    <div class="stat-icon mb-2" style="font-size:2.5rem;color:#3b82f6;"><i class="fa-solid fa-robot"></i></div>
+                    <h6 class="card-title mb-1">Tổng số AI-Agent</h6>
+                    <p class="display-6 fw-bold mb-0">@Model.TotalAgents</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm stat-card h-100">
+                <div class="card-body">
+                    <div class="stat-icon mb-2" style="font-size:2.5rem;color:#10b981;"><i class="fa-solid fa-building"></i></div>
+                    <h6 class="card-title mb-1">Tổng số nhà cung cấp</h6>
+                    <p class="display-6 fw-bold mb-0">@Model.TotalSuppliers</p>
+                </div>
+            </div>
+        </div>
+        <div class="col-md-4">
+            <div class="card text-center shadow-sm stat-card h-100">
+                <div class="card-body">
+                    <div class="stat-icon mb-2" style="font-size:2.5rem;color:#f59e42;"><i class="fa-solid fa-users"></i></div>
+                    <h6 class="card-title mb-1">Tổng số người dùng</h6>
+                    <p class="display-6 fw-bold mb-0">@Model.TotalUsers</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="mb-4">
+        <h5 class="fw-bold mb-3 text-center"><i class="fa-solid fa-layer-group me-2"></i>Số lượng AI-Agent theo thể loại</h5>
+        <div class="d-flex justify-content-center">
+            <canvas id="agentsByCategoryChart" style="max-width:700px;min-height:320px;"></canvas>
+        </div>
+        <div id="noDataMsg" class="text-center text-muted mt-3" style="display:none;">Không có dữ liệu để hiển thị biểu đồ.</div>
+    </div>
+</div>
+<style>
+    .stat-card {
+        border: none;
+        border-radius: 16px;
+        transition: box-shadow 0.2s, transform 0.2s;
+        background: linear-gradient(135deg, #f0f4ff 0%, #f8fafc 100%);
+    }
+    .stat-card:hover {
+        box-shadow: 0 8px 32px #dbeafe;
+        transform: translateY(-4px) scale(1.03);
+    }
+    .stat-icon {
+        filter: drop-shadow(0 2px 6px #e0e7ff);
+    }
+</style>
+@section Scripts {
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+    <script>
+        const labels = @Html.Raw(JsonSerializer.Serialize(Model.AgentsByCategory.Select(c => c.CategoryName)));
+        const data = @Html.Raw(JsonSerializer.Serialize(Model.AgentsByCategory.Select(c => c.Count)));
+        if (!labels || labels.length === 0 || !data || data.length === 0) {
+            document.getElementById('agentsByCategoryChart').style.display = 'none';
+            document.getElementById('noDataMsg').style.display = 'block';
+        } else {
+            document.getElementById('agentsByCategoryChart').style.display = 'block';
+            document.getElementById('noDataMsg').style.display = 'none';
+            var ctx = document.getElementById('agentsByCategoryChart').getContext('2d');
+            // Gradient fill for bars
+            var gradient = ctx.createLinearGradient(0, 0, 0, 400);
+            gradient.addColorStop(0, 'rgba(54, 162, 235, 0.85)');
+            gradient.addColorStop(1, 'rgba(54, 162, 235, 0.25)');
+            var chart = new Chart(ctx, {
+                type: 'bar',
+                data: {
+                    labels: labels,
+                    datasets: [{
+                        label: 'Số lượng AI-Agent',
+                        data: data,
+                        backgroundColor: gradient,
+                        borderColor: 'rgba(54, 162, 235, 1)',
+                        borderWidth: 2,
+                        borderRadius: 8,
+                        hoverBackgroundColor: 'rgba(16, 185, 129, 0.7)',
+                        hoverBorderColor: 'rgba(16, 185, 129, 1)'
+                    }]
+                },
+                options: {
+                    responsive: true,
+                    maintainAspectRatio: false,
+                    plugins: {
+                        legend: { display: false },
+                        title: { display: false },
+                        tooltip: {
+                            callbacks: {
+                                label: function(context) {
+                                    return ` ${context.parsed.y} AI-Agent`;
+                                }
+                            }
+                        }
+                    },
+                    scales: {
+                        x: {
+                            grid: { display: false },
+                            ticks: { font: { size: 14 } }
+                        },
+                        y: {
+                            beginAtZero: true,
+                            grid: { color: '#e5e7eb' },
+                            ticks: { font: { size: 14 }, stepSize: 1 }
+                        }
+                    },
+                    animation: {
+                        duration: 900,
+                        easing: 'easeOutQuart'
+                    }
+                }
+            });
+        }
+    </script>
+}

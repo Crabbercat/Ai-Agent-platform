@@ -13,7 +13,7 @@ using System.Reflection;
 [assembly: System.Reflection.AssemblyCompanyAttribute("AI_Agent_WebApp")]
 [assembly: System.Reflection.AssemblyConfigurationAttribute("Debug")]
 [assembly: System.Reflection.AssemblyFileVersionAttribute("1.0.0.0")]
-[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+f861287843a02a011683eafd1282523e33e02146")]
+[assembly: System.Reflection.AssemblyInformationalVersionAttribute("1.0.0+62947cd6431fb84e8cd4d781c6c8b6670360b67a")]
 [assembly: System.Reflection.AssemblyProductAttribute("AI_Agent_WebApp")]
 [assembly: System.Reflection.AssemblyTitleAttribute("AI_Agent_WebApp")]
 [assembly: System.Reflection.AssemblyVersionAttribute("1.0.0.0")]

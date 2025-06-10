@@ -1,3 +1,4 @@
+using AI_Agent_WebApp.Data;
 using AI_Agent_WebApp.Models.Entities;
 using AI_Agent_WebApp.Services.Interfaces;
 using Microsoft.AspNetCore.Mvc;
@@ -8,9 +9,11 @@ namespace AI_Agent_WebApp.Controllers
     public class AdminController : Controller
     {
         private readonly IStaffService _staffService;
-        public AdminController(IStaffService staffService)
+        private readonly ApplicationDbContext _context;
+        public AdminController(IStaffService staffService, ApplicationDbContext context)
         {
             _staffService = staffService;
+            _context = context;
         }
 
         // List all staff
@@ -104,6 +107,30 @@ namespace AI_Agent_WebApp.Controllers
         {
             _staffService.DeleteStaff(id);
             return RedirectToAction("StaffList");
+        }
+
+        // Thống kê hệ thống
+        public IActionResult SystemStatistics()
+        {
+            var context = _context;
+            var totalAgents = context.Agents.Count();
+            var totalSuppliers = context.Users.Count(u => u.Role == "Supplier");
+            var totalUsers = context.Users.Count(u => u.Role == "User");
+            var agentsByCategory = context.Categories
+                .Select(c => new AI_Agent_WebApp.Models.ViewModels.AgentsByCategory
+                {
+                    CategoryName = c.Name,
+                    Count = context.Agents.Count(a => a.CategoryId == c.Id)
+                })
+                .ToList();
+            var vm = new AI_Agent_WebApp.Models.ViewModels.SystemStatisticsViewModel
+            {
+                TotalAgents = totalAgents,
+                TotalSuppliers = totalSuppliers,
+                TotalUsers = totalUsers,
+                AgentsByCategory = agentsByCategory
+            };
+            return View("SystemStatistics", vm);
         }
     }
 }

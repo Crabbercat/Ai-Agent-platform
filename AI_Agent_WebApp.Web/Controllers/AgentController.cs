@@ -98,15 +98,15 @@ namespace AI_Agent_WebApp.Controllers
                 // Xử lý upload ảnh
                 if (model.ImageFile != null && model.ImageFile.Length > 0)
                 {
-                    var fileName = $"agent_{DateTime.Now.Ticks}{Path.GetExtension(model.ImageFile.FileName)}";
-                    var folderPath = Path.Combine("wwwroot", "uploads", "agents");
+                    var fileName = $"{Path.GetFileNameWithoutExtension(model.ImageFile.FileName)}_{DateTime.Now.Ticks}{Path.GetExtension(model.ImageFile.FileName)}";
+                    var folderPath = Path.Combine("wwwroot", "images", "agents");
                     Directory.CreateDirectory(folderPath);
                     var fullPath = Path.Combine(folderPath, fileName);
                     using (var stream = new FileStream(fullPath, FileMode.Create))
                     {
                         await model.ImageFile.CopyToAsync(stream);
                     }
-                    agent.ImagePath = $"/uploads/agents/{fileName}";
+                    agent.ImagePath = $"/images/agents/{fileName}";
                 }
                 else
                 {
@@ -155,14 +155,14 @@ namespace AI_Agent_WebApp.Controllers
                 if (model.ImageFile != null && model.ImageFile.Length > 0)
                 {
                     var fileName = $"agent_{DateTime.Now.Ticks}{Path.GetExtension(model.ImageFile.FileName)}";
-                    var folderPath = Path.Combine("wwwroot", "uploads", "agents");
+                    var folderPath = Path.Combine("wwwroot", "images", "agents");
                     Directory.CreateDirectory(folderPath);
                     var fullPath = Path.Combine(folderPath, fileName);
                     using (var stream = new FileStream(fullPath, FileMode.Create))
                     {
                         await model.ImageFile.CopyToAsync(stream);
                     }
-                    agent.ImagePath = $"/uploads/agents/{fileName}";
+                    agent.ImagePath = $"/images/agents/{fileName}";
                 }
                 // Nếu không upload mới, giữ nguyên ảnh cũ
                 _context.Agents.Update(agent);

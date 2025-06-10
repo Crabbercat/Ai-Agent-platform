@@ -1,6 +1,6 @@
 {
   "Version": 1,
-  "Hash": "1PzYJLP88tp7/CjKDYHZV/72s6mFyxM0vu6ELlK3gGo=",
+  "Hash": "dbMpV2NaBX3TFuWAEJm6Rw8FL6bDXDezamXDVXEJ6us=",
   "Source": "AI_Agent_WebApp",
   "BasePath": "_content/AI_Agent_WebApp",
   "Mode": "Default",
@@ -1424,27 +1424,6 @@
       "OriginalItemSpec": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\scopedcss\\projectbundle\\AI_Agent_WebApp.bundle.scp.css"
     },
     {
-      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\.copilot-move",
-      "SourceId": "AI_Agent_WebApp",
-      "SourceType": "Discovered",
-      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
-      "BasePath": "_content/AI_Agent_WebApp",
-      "RelativePath": "#[.{fingerprint}]?.copilot-move",
-      "AssetKind": "All",
-      "AssetMode": "All",
-      "AssetRole": "Primary",
-      "AssetMergeBehavior": "",
-      "AssetMergeSource": "",
-      "RelatedAsset": "",
-      "AssetTraitName": "",
-      "AssetTraitValue": "",
-      "Fingerprint": "5ipweew5fc",
-      "Integrity": "47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=",
-      "CopyToOutputDirectory": "Never",
-      "CopyToPublishDirectory": "PreserveNewest",
-      "OriginalItemSpec": "wwwroot\\.copilot-move"
-    },
-    {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\AIDomain.png",
       "SourceId": "AI_Agent_WebApp",
       "SourceType": "Discovered",
@@ -1590,6 +1569,27 @@
       "CopyToOutputDirectory": "Never",
       "CopyToPublishDirectory": "PreserveNewest",
       "OriginalItemSpec": "wwwroot\\images\\agents\\ByteWarden.png"
+    },
+    {
+      "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\chaclafinal2-removebg-preview_638851112308317098.png",
+      "SourceId": "AI_Agent_WebApp",
+      "SourceType": "Discovered",
+      "ContentRoot": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\",
+      "BasePath": "_content/AI_Agent_WebApp",
+      "RelativePath": "images/agents/chaclafinal2-removebg-preview_638851112308317098#[.{fingerprint}]?.png",
+      "AssetKind": "All",
+      "AssetMode": "All",
+      "AssetRole": "Primary",
+      "AssetMergeBehavior": "",
+      "AssetMergeSource": "",
+      "RelatedAsset": "",
+      "AssetTraitName": "",
+      "AssetTraitValue": "",
+      "Fingerprint": "6h5hjefaxm",
+      "Integrity": "+pAxhQYWqZsUOFR27/SVsxQtSl6IoeWFmx+u+9MqWsg=",
+      "CopyToOutputDirectory": "Never",
+      "CopyToPublishDirectory": "PreserveNewest",
+      "OriginalItemSpec": "wwwroot\\images\\agents\\chaclafinal2-removebg-preview_638851112308317098.png"
     },
     {
       "Identity": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\ChronaEdge.png",
@@ -3231,88 +3231,6 @@
     }
   ],
   "Endpoints": [
-    {
-      "Route": ".5ipweew5fc.copilot-move",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\.copilot-move",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 05:24:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "max-age=31536000, immutable"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "fingerprint",
-          "Value": "5ipweew5fc"
-        },
-        {
-          "Name": "label",
-          "Value": ".copilot-move"
-        },
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
-    {
-      "Route": ".copilot-move",
-      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\.copilot-move",
-      "Selectors": [],
-      "ResponseHeaders": [
-        {
-          "Name": "Accept-Ranges",
-          "Value": "bytes"
-        },
-        {
-          "Name": "Content-Length",
-          "Value": "0"
-        },
-        {
-          "Name": "Content-Type",
-          "Value": "application/octet-stream"
-        },
-        {
-          "Name": "ETag",
-          "Value": "\"47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU=\""
-        },
-        {
-          "Name": "Last-Modified",
-          "Value": "Mon, 12 May 2025 05:24:06 GMT"
-        },
-        {
-          "Name": "Cache-Control",
-          "Value": "no-cache"
-        }
-      ],
-      "EndpointProperties": [
-        {
-          "Name": "integrity",
-          "Value": "sha256-47DEQpj8HBSa+/TImW+5JCeuQeRkm5NMpJWZG3hSuFU="
-        }
-      ]
-    },
     {
       "Route": "AI_Agent_WebApp.bundle.scp.css",
       "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\obj\\Debug\\net9.0\\compressed\\t6aiw223n3-gxteyfa2e2.gz",
@@ -5128,6 +5046,88 @@
         {
           "Name": "integrity",
           "Value": "sha256-FQGTB7K4vR3T+d5GxHdvMYVzi0HJiK4W8odm6QWq4A8="
+        }
+      ]
+    },
+    {
+      "Route": "images/agents/chaclafinal2-removebg-preview_638851112308317098.6h5hjefaxm.png",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\chaclafinal2-removebg-preview_638851112308317098.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "181752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+pAxhQYWqZsUOFR27/SVsxQtSl6IoeWFmx+u+9MqWsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 17:13:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=31536000, immutable"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "fingerprint",
+          "Value": "6h5hjefaxm"
+        },
+        {
+          "Name": "label",
+          "Value": "images/agents/chaclafinal2-removebg-preview_638851112308317098.png"
+        },
+        {
+          "Name": "integrity",
+          "Value": "sha256-+pAxhQYWqZsUOFR27/SVsxQtSl6IoeWFmx+u+9MqWsg="
+        }
+      ]
+    },
+    {
+      "Route": "images/agents/chaclafinal2-removebg-preview_638851112308317098.png",
+      "AssetFile": "D:\\OneDrive - The University of Technology\\DOCUMENT\\HK4\\2.PBL3\\Ai-Agent-platform\\AI_Agent_WebApp.Web\\wwwroot\\images\\agents\\chaclafinal2-removebg-preview_638851112308317098.png",
+      "Selectors": [],
+      "ResponseHeaders": [
+        {
+          "Name": "Accept-Ranges",
+          "Value": "bytes"
+        },
+        {
+          "Name": "Content-Length",
+          "Value": "181752"
+        },
+        {
+          "Name": "Content-Type",
+          "Value": "image/png"
+        },
+        {
+          "Name": "ETag",
+          "Value": "\"+pAxhQYWqZsUOFR27/SVsxQtSl6IoeWFmx+u+9MqWsg=\""
+        },
+        {
+          "Name": "Last-Modified",
+          "Value": "Mon, 09 Jun 2025 17:13:50 GMT"
+        },
+        {
+          "Name": "Cache-Control",
+          "Value": "max-age=3600, must-revalidate"
+        }
+      ],
+      "EndpointProperties": [
+        {
+          "Name": "integrity",
+          "Value": "sha256-+pAxhQYWqZsUOFR27/SVsxQtSl6IoeWFmx+u+9MqWsg="
         }
       ]
     },
